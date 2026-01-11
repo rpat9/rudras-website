@@ -1,3 +1,5 @@
+import Skills from "./Skills";
+
 export default function AboutMe() {
 
     const paragraphs = [
@@ -12,21 +14,12 @@ export default function AboutMe() {
         {id: 'focus', content: "I enjoy solving complex technical problems, whether that's optimizing database queries, building scalable APIs, or training machine learning models. My focus is on writing code that performs well and delivers measurable impact."},
     ];
 
-    const languages = ["Python", "Java", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"];
-
-    const frameworks = ["React", "Node.js", "Spring Boot", "FastAPI", "Express.js", "Tailwind CSS", "Bootstrap"];
-
-    const databases = ["PostgreSQL", "Supabase", "MySQL", "NoSQL", "MongoDB", "Redis", "Google Firebase"];
-
-    const devtools = ["Git", "Docker", "GitHub Actions", "AWS", "GCP", "Azure", "Auth0"];
-
-    const mlData = ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"];
-
     return (
         <section 
             id="about" 
-            className="px-6 py-32 bg-sections animate-fade-in"
+            className="px-3 lg:px-6 py-24 lg:py-32 bg-sections animate-fade-in"
         >
+            
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl text-gradient-sections font-bold text-center mb-20 ">About Me</h2>
             </div>
@@ -49,99 +42,26 @@ export default function AboutMe() {
 
                 </div>
 
-                {/* Skills and Languages Section */}
-                <div className="flex flex-col justify-between px-2 py-4">
+                <Skills />
 
-                    <div className="mb-8">
-                        <h3 className="text-primary font-semibold text-2xl mb-3">
-                                Languages
-                        </h3>
-
-                        <div className="flex flex-wrap gap-2">
-                                {languages.map((language) => (
-                                    <span
-                                        key={language}
-                                        className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                                    >
-                                        {language}
-                                    </span>
-                                ))}
-                        </div>
-                    </div>
-
-                    <div className="mb-8">
-                        <h3 className="text-primary font-semibold text-2xl mb-3">
-                            Frameworks
-                        </h3>
-
-                        <div className="flex flex-wrap gap-2">
-                            {frameworks.map((framework) => (
-                                <span
-                                    key={framework}
-                                    className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                                >
-                                    {framework}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="mb-8">
-                        <h3 className="text-primary font-semibold text-2xl mb-3">
-                            Databases
-                        </h3>
-
-                        <div className="flex flex-wrap gap-2">
-                            {databases.map((database) => (
-                                <span
-                                    key={database}
-                                    className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                                >
-                                    {database}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="mb-8">
-                        <h3 className="text-primary font-semibold text-2xl mb-3">
-                            Developer Tools
-                        </h3>
-
-                        <div className="flex flex-wrap gap-2">
-                            {devtools.map((devtool) => (
-                                <span
-                                    key={devtool}
-                                    className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                                >
-                                    {devtool}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 className="text-primary font-semibold text-2xl mb-3">
-                            Machine Learning & Data Science
-                        </h3>
-
-                        <div className="flex flex-wrap gap-2">
-                            {mlData.map((mld) => (
-                                <span
-                                    key={mld}
-                                    className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                                >
-                                    {mld}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                        
-                </div>
             </div>
 
             {/* Mobile About Section */}
-            <div>
+            <div className="flex flex-col lg:hidden">
+
+                <div className="flex flex-col gap-6 px-3 py-2">
+                    {paragraphs.map((paragraph) => (
+                        <p
+                            key={paragraph.id}
+
+                            className="text-secondary"
+                        >
+                            {paragraph.content}
+                        </p>
+                    ))}
+                </div>
+
+                <Skills />
 
             </div>
 
