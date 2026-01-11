@@ -13,7 +13,7 @@ export default function Hero() {
     ]
 
     return (
-        <section className="min-h-screen bg-primary flex flex-col justify-center pt-32 pb-8 md:ml-20">
+        <section className="min-h-screen bg-primary flex flex-col justify-center pt-40 pb-8 max-w-8xl mx-auto sm:px-16">
             
             <div className="px-10 md:px-20 lg:px-24 max-w-[1400px]">
                 <h2 className="text-accent font-extralight leading-relaxed text-xl md:text-base">Hi, my name is</h2>

@@ -1,6 +1,7 @@
 import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
 import AboutMe from "./components/About/AboutMe"
+import ProfessionalExperience from "./components/Experience/ProfessionalExperience"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
             <Navbar />
             <Hero />
             <AboutMe />
+            <ProfessionalExperience />
         </>
     )
 }

@@ -17,15 +17,15 @@ export default function AboutMe() {
     return (
         <section 
             id="about" 
-            className="px-3 lg:px-6 py-24 lg:py-32 bg-sections animate-fade-in"
+            className="px-3 lg:px-6 py-24 bg-sections animate-fade-in"
         >
-            
-            <div className="max-w-6xl mx-auto">
+
+            <div className="max-w-7xl mx-auto">
                 <h2 className="text-4xl text-gradient-sections font-bold text-center mb-20 ">About Me</h2>
             </div>
 
             {/* Desktop About Section */}
-            <div className="hidden lg:grid md:grid-cols-2 ml-15 gap-8">
+            <div className="hidden lg:grid lg:grid-cols-2 ml-15 gap-8">
 
                 {/* Description column */}
                 <div className="flex flex-col gap-6 px-10 py-4">
@@ -47,7 +47,7 @@ export default function AboutMe() {
             </div>
 
             {/* Mobile About Section */}
-            <div className="flex flex-col lg:hidden">
+            <div className="flex flex-col lg:hidden md:mr-8 md:ml-16">
 
                 <div className="flex flex-col gap-6 px-3 py-2">
                     {paragraphs.map((paragraph) => (
