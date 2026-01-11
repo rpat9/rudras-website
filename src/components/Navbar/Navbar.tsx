@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { FiMenu as Menu } from "react-icons/fi";
+import { RxCross2 as X} from "react-icons/rx"
 
 export default function Navbar() { 
 
