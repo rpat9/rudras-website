@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Rudra Patel - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio website built with React, TypeScript, and Tailwind CSS. This site showcases my professional experience, technical skills, and featured projects.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio serves as my personal website to present my work as a software developer. It features a clean, dark-themed design with smooth animations and a mobile-first approach.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design** - Optimized for desktop and mobile devices with a dedicated sidebar navigation on mobile
+- **Smooth Animations** - Intersection Observer-based scroll animations with staggered effects
+- **Interactive Project Showcase** - Desktop view features a selectable project list with animated transitions
+- **Glass Card UI** - Modern glassmorphism design elements throughout the site
+- **Dynamic Content** - Project and experience data driven by TypeScript data files for easy updates
 
-## Expanding the ESLint configuration
+## Sections
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Hero** - Introduction with typewriter effect and call-to-action buttons
+- **About Me** - Background, skills, and technical expertise
+- **Professional Experience** - Work history with achievements and metrics
+- **Featured Projects** - Highlighted work with technologies, achievements, and live demos
+- **Contact** - Links to email, phone, GitHub, and LinkedIn
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── About/              # About section with skills
+│   ├── Contact/            # Contact information and links
+│   ├── Experience/         # Professional experience timeline
+│   ├── FeaturedProjects/   # Project showcase
+│   ├── Hero/               # Landing section with typewriter
+│   └── Navbar/             # Navigation component
+├── data/
+│   ├── projectData.ts      # Featured projects content
+│   └── resumeData.ts       # Experience and skills content
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Author
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Rudra Patel**  
+Computer Science @ Lewis University | Graduating May 2026  
+[GitHub](https://github.com/rpat9) • [LinkedIn](https://www.linkedin.com/in/rudrapatel09/) • [Email](mailto:rudrap26176@gmail.com)

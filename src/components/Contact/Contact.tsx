@@ -190,6 +190,12 @@ export default function Contact() {
                 </div>
             </div>
 
+            <div className="text-center mt-12 pb-1">
+                <p className="text-secondary text-sm">
+                    © 2026 Rudra Patel. All rights reserved.
+                </p>
+            </div>
+
         </section>
     )
 }
