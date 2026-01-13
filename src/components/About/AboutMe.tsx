@@ -1,6 +1,29 @@
+import { useEffect, useRef, useState } from "react";
 import Skills from "./Skills";
 
 export default function AboutMe() {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            },
+            { threshold: 0.25 }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     const paragraphs = [
         {id: 'school', content: "I'm a Computer Science major at Lewis University, graduating in May 2026, with a concentration in Artificial Intelligence and a 3.87 GPA."},
@@ -15,9 +38,15 @@ export default function AboutMe() {
     ];
 
     return (
-        <section 
+        <section
+            ref={ref}
             id="about" 
-            className="px-3 lg:px-6 py-24 bg-sections animate-fade-in"
+            className="px-3 lg:px-6 py-24 bg-sections"
+            style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 2s ease-out, transform 2s ease-out'
+            }}
         >
 
             <div className="max-w-7xl mx-auto">
@@ -33,7 +62,6 @@ export default function AboutMe() {
                     {paragraphs.map((paragraph) => (
                         <p
                             key={paragraph.id}
-
                             className="text-secondary"
                         >
                             {paragraph.content}
@@ -53,7 +81,6 @@ export default function AboutMe() {
                     {paragraphs.map((paragraph) => (
                         <p
                             key={paragraph.id}
-
                             className="text-secondary"
                         >
                             {paragraph.content}

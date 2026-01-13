@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FiMenu as Menu } from "react-icons/fi";
-import { RxCross2 as X} from "react-icons/rx"
+import { RxCross2 as X} from "react-icons/rx";
 
 export default function Navbar() { 
 
@@ -44,7 +44,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={scrolled ? "scrolled" : ""}>
+            <nav className={`navbar-initial-animation ${scrolled ? "scrolled" : ""}`}>
 
                 <a 
                     href="#"

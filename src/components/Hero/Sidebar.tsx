@@ -4,7 +4,7 @@ export default function Sidebar() {
     return (
         <>
             {/* Desktop Sidebar - Fixed position left */}
-            <div className="sidebar-left hidden md:flex">
+            <div className="sidebar-left hidden md:flex sidebar-initial-animation">
                 <div className="flex flex-col items-center gap-6">
 
                     <a 
@@ -44,7 +44,7 @@ export default function Sidebar() {
             </div>
 
             {/* Mobile Sidebar - Centered Below Buttons */}
-            <div className="flex md:hidden justify-center pt-10 pb-12">
+            <div className="flex md:hidden justify-center pt-10 pb-12 sidebar-initial-animation">
                 <div className="flex flex-row items-center gap-6">
                     <a 
                         href="https://github.com/rpat9"

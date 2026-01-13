@@ -1,14 +1,49 @@
+import { useEffect, useRef, useState } from "react";
 import { experiences } from "../../data/resumeData";
 
 export default function ProfessionalExperience() {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            },
+            { threshold: 0.05 }
+        );
+    
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+    
+        return () => observer.disconnect();
+    }, []);
+
+    
     return (
         <section 
+            ref={ref}
             id="experience"
-            className="px-3 lg:px-6 py-14 lg:py-24 bg-sections animate-fade-in"
+            className="px-3 lg:px-6 py-14 lg:py-24 bg-sections overflow-hidden"
         >
 
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl text-gradient-sections font-bold text-center mb-20">Professional Experience</h2>
+                <h2 
+                    className="text-4xl text-gradient-sections font-bold text-center mb-20"
+                    style={{
+                        opacity: isVisible ? 1 : 0,
+                        transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                        transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
+                    }}
+                >
+                    Professional Experience
+                </h2>
             </div>
 
             {/* Desktop Experience Section */}
@@ -19,7 +54,15 @@ export default function ProfessionalExperience() {
                         className="grid grid-cols-2 gap-6"
                         key={experience.id}
                     >
-                        <div className="flex flex-col gap-2">
+                        {/* Left column - slides in from left */}
+                        <div 
+                            className="flex flex-col gap-2"
+                            style={{
+                                opacity: isVisible ? 1 : 0,
+                                transform: isVisible ? 'translateX(0)' : 'translateX(-50px)',
+                                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
+                            }}
+                        >
                             <h2 
                                 className="text-primary font-semibold text-xl"
                             >
@@ -64,7 +107,15 @@ export default function ProfessionalExperience() {
 
                         </div>
 
-                        <div className="flex flex-col gap-2">
+                        {/* Right column - slides in from right */}
+                        <div 
+                            className="flex flex-col gap-2"
+                            style={{
+                                opacity: isVisible ? 1 : 0,
+                                transform: isVisible ? 'translateX(0)' : 'translateX(50px)',
+                                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
+                            }}
+                        >
 
                             {experience.achievements.map((achievement, index) => (
                                 <div
@@ -94,7 +145,14 @@ export default function ProfessionalExperience() {
             </div>
 
             {/* Mobile Experience Section */}
-            <div className="lg:hidden flex flex-col gap-32 mt-10 px-1">
+            <div 
+                className="lg:hidden flex flex-col gap-32 mt-10 px-1 md:ml-16"
+                style={{
+                    opacity: isVisible ? 1 : 0,
+                    transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                    transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
+                }}
+            >
                 {experiences.map((experience) => (
                     <div 
                         className="flex flex-col gap-6"

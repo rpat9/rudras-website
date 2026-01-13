@@ -21,11 +21,13 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: var(--bg-primary);
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 #root {
     min-height: 100vh;
     background-color: var(--bg-primary);
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .container-padding {
@@ -278,37 +280,6 @@ nav.scrolled {
 }
 
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in-up {
-    animation: fadeInUp 0.5s ease forwards;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in {
-    animation: fade-in 0.3s ease-out forwards;
-}
-
 @keyframes scrollPulse {
     0%, 100% {
         opacity: 0.5;
@@ -318,4 +289,166 @@ nav.scrolled {
         opacity: 1;
         transform: scaleY(1.2);
     }
+}
+
+/* Initial Page Load Animations */
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sidebarFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-initial-animation {
+    opacity: 0;
+    animation: navbarFadeIn 0.8s ease-out forwards;
+}
+
+.hero-initial-animation {
+    opacity: 0;
+    animation: heroFadeInUp 1.0s ease-out 0.4s forwards;
+}
+
+.sidebar-initial-animation {
+    opacity: 0;
+    animation: sidebarFadeIn 1.2s ease-out 1.2s forwards;
+}
+
+/* Glassmorphism Card Styles for Projects */
+.glass-card {
+    background: rgba(21, 40, 69, 0.6);  /* Primary blue with transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.1);  /* Subtle cyan border */
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    background: rgba(21, 40, 69, 0.75);  /* Slightly more opaque on hover */
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
+}
+
+.glass-card-selected {
+    background: rgba(21, 40, 69, 0.8);
+    border-left: 3px solid var(--accent-cyan);
+    border: 1px solid rgba(100, 255, 218, 0.3);
+}
+
+/* Project Color Variants */
+.project-color-teal {
+    color: #14b8a6;
+}
+
+.project-color-orange {
+    color: #f5c174;
+}
+
+.project-color-blue {
+    color: #60a5fa;
+}
+
+.project-color-magenta {
+    color: #e879f9;
+}
+
+.project-color-yellow {
+    color: #dafa8e;
+}
+
+.project-dot-teal {
+    background-color: #14b8a6;
+}
+
+.project-dot-orange {
+    background-color: #f5c174;
+}
+
+.project-dot-blue {
+    background-color: #60a5fa;
+}
+
+.project-dot-magenta {
+    background-color: #e879f9;
+}
+
+.project-dot-yellow {
+    background-color: #dafa8e;
+}
+
+.project-border-teal {
+    border-left-color: #14b8a6;
+}
+
+.project-border-orange {
+    border-left-color: #f5c174;
+}
+
+.project-border-blue {
+    border-left-color: #60a5fa;
+}
+
+.project-border-magenta {
+    border-left-color: #e879f9;
+}
+
+.project-border-yellow {
+    border-left-color: #dafa8e;
+}
+
+/* Project Detail Panel Animation */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+}
+
+.project-detail-enter {
+    animation: slideInFromLeft 0.4s ease-out forwards;
+}
+
+.project-detail-exit {
+    animation: slideOutToRight 0.3s ease-out forwards;
 }
