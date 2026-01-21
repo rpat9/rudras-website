@@ -49,22 +49,23 @@ export const projects = [
 
     {
         id: 3,
-        title: "ExoViz",
-        category: "Full-Stack Development",
-        dates: "Dec 2025 - Present",
-        status: "In Progress",
+        title: "Analytics Pipeline",
+        category: "Backend Development",
+        dates: "Jan 2026",
+        status: "Completed",
         type: "Personal",
         color: "blue",
-        description: "An exoplanet exploration platform enabling astronomy researchers to query and visualize 5,000+ NASA exoplanet records with ML-powered habitability predictions",
-        technologies: ["React", "TypeScript", "Spring Boot", "FastAPI", "PostgreSQL", "Scikit-learn", "Docker", "Redis", "Three.js"],
+        description: "An analytics system that ingests 100,000 events per hour continuously, processes them in real-time, stores them efficiently, visualizes metrics on a live dashboard, and the ability to query historical data.",
+        technologies: ["Node.js", "TypeScript", "React", "TimescaleDB", "Redis Streams", "Docker"],
         achievements: [
-            "Architected 3-service microservices backend (Spring Boot for data aggregation, FastAPI for ML inference, Redis for caching) reducing query latency by 50%",
-            "Developed ML model predicting planet habitability with 82% accuracy using Scikit-learn on NASA exoplanet data",
-            "Building a real-time 3D visualization system using Three.js for interactive exploration of 5,000+ exoplanet records",
-            "Implementing advanced filtering system by habitability score, stellar type, and orbital characteristics",
+            "Built event processing pipeline handling 2.4M events over 24 hours (28 events/sec, 280 events/sec burst) with Redis Streams consumer groups achieving <10ms latency and zero message loss",
+            "Reduced dashboard query latency 55x (1.8s → 33ms) by implementing TimescaleDB continuous aggregates with 3 materialization levels (minute/hour/day) and automatic refresh policies, eliminating real-time aggregation",
+            "Developed REST API with 5-38ms response times using strategic caching (5-10s TTL) and continuous aggregates, powering React dashboard with auto-refresh polling (5s intervals) and Recharts visualization across 2.4M+  records",
         ],
-        metrics: ["5000+ NASA Records", "82% ML Accuracy"],
-        links: {}, // No links yet - in development
+        metrics: ["2.4M events daily", "5-38ms API response times"],
+        links: {
+            github: "https://github.com/rpat9/Analytics-Pipeline",
+        },
     },
 
     {
@@ -97,15 +98,15 @@ export const projects = [
         status: "Completed",
         type: "Personal",
         color: "magenta",
-        description: "An AI-powered recipe generator integrating Claude API that serves personalized recipes in under 5 seconds through optimized prompt engineering, supporting dietary restrictions and ingredient preferences.",
+        description: "An AI-powered recipe generator integrating Claude API that serves personalized recipes in under 3 seconds through optimized prompt engineering, supporting dietary restrictions and ingredient preferences.",
         technologies: ["React", "Claude API", "Tailwind CSS", "Firebase", "Docker", "AWS"],
         achievements: [
-            "Built AI recipe generator serving personalized recipes in under 5 seconds through optimized prompt engineering",
+            "Built AI recipe generator serving personalized recipes in under 3 seconds through optimized prompt engineering",
             "Integrated Claude API with async request handling for dietary restrictions and ingredient preferences",
             "Simplified deployment with Docker containers and automated CI/CD pipeline on AWS",
             "Reduced deployment time by 80% through containerization and automation"
         ],
-        metrics: ["<5s Response Time", "80% Faster Deployment"],
+        metrics: ["<3s Response Time", "80% Faster Deployment"],
         links: {
             github: "https://github.com/rpat9/MasterChef-Claude"
         }
