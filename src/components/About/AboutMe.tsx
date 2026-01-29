@@ -32,7 +32,7 @@ export default function AboutMe() {
 
         {id: 'quizmaster', content: "As Lead Developer for QuizMaster, my capstone project, I tackled critical performance issues. I reduced dashboard load time from over 30 seconds to under 5 seconds by eliminating N+1 queries and implementing batch queries with caching. I cut the production bundle by 89% and reduced cloud hosting costs by 37% through asset optimization and code cleanup. I also led the migration of 17 Firebase Functions to Node.js 20 and refactored the component architecture to eliminate 80% of redundant database reads."},
 
-        {id: 'current-projects', content: "Currently, I'm building ExoViz, an exoplanet exploration platform that processes 5,000+ NASA records with real-time 3D visualization using Three.js. The project uses a microservices architecture with Spring Boot, FastAPI, and Redis, and includes a machine learning model that predicts planet habitability with 82% accuracy."},
+        {id: 'current-projects', content: "Most recently, I engineered a high-throughput Analytics Pipeline capable of processing 2.4 million events daily. By implementing Redis Streams for queuing and TimescaleDB continuous aggregates, I reduced query latency by 55x—cutting response times from 1.8 seconds to just 33 milliseconds—while visualizing real-time metrics on a custom React dashboard."},
 
         {id: 'focus', content: "I enjoy solving complex technical problems, whether that's optimizing database queries, building scalable APIs, or training machine learning models. My focus is on writing code that performs well and delivers measurable impact."},
     ];
