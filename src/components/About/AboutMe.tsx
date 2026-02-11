@@ -15,7 +15,7 @@ export default function AboutMe() {
                     setIsVisible(false);
                 }
             },
-            { threshold: 0.25 }
+            { threshold: 0.05 }
         );
 
         if (ref.current) {

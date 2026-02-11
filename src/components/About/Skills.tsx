@@ -5,7 +5,7 @@ export default function Skills() {
 
     const databases = ["PostgreSQL", "Supabase", "MySQL", "NoSQL", "MongoDB", "Redis", "Google Firebase"];
 
-    const devtools = ["Git", "Docker", "GitHub Actions", "AWS", "GCP", "Azure", "Microservices", "REST APIs", "System Design", "Auth0"];
+    const devtools = ["Git", "Docker", "AWS S3", "AWS IAM", "AWS CloudWatch", "AWS RDS", "AWS ECS", "AWS SecretsManager", "GCP", "Azure", "REST APIs", "System Design"];
 
     const mlData = ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"];
 

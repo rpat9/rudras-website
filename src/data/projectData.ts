@@ -70,6 +70,28 @@ export const projects = [
 
     {
         id: 4,
+        title: "MasterChef",
+        category: "AI Full-Stack",
+        dates: "Dec 2025 - Feb 2026",
+        status: "Completed",
+        type: "Personal",
+        color: "magenta",
+        description: "An AI-powered recipe generator integrating AI models Ollama/Mistral that serve personalized recipes based on dietary restrictions, and ingredient preferences. Built with production-grade backend infrastructure utilizing Spring Boot, AWS S3, RDS, IAM, CloudWatch, SecretsManager, ECS.",
+        technologies: ["TypeScript", "Java", "Spring Boot", "AWS", "Docker", "PostgreSQL", "Terraform"],
+        achievements: [
+            "Developed full-stack AI recipe platform with React and Java/Spring Boot, generating personalized recipes from 3-15 ingredients with dietary filters (vegan, keto, gluten-free), user authentication, and recipe management using AWS S3 (save, export, view history)",
+            "Built AI orchestration layer integrating local LLM (Ollama/Mistral) with PostgreSQL caching and automatic retry logic, achieving 40% cache hit rate and sub-200ms response times for cached requests, reducing redundant AI calls",
+            "Implemented security with JWT authentication, password hashing, role-based access control, and designed cloud infrastructure using Terraform and Docker with AWS IAM policies, Secrets Manager for credentials, and encrypted storage (RDS, S3)"
+        ],
+        metrics: ["3-15 Ingredients", "40% cache hit rate"],
+        links: {
+            github: "https://github.com/rpat9/MasterChef"
+        },
+        featured: true
+    },
+
+    {
+        id: 5,
         title: "Social Media Sentiment Classifier",
         category: "Machine Learning",
         dates: "Nov 2025",
@@ -90,25 +112,4 @@ export const projects = [
         }
     },
 
-    {
-        id: 5,
-        title: "MasterChef Claude",
-        category: "AI/ML",
-        dates: "Apr 2025 - May 2025",
-        status: "Completed",
-        type: "Personal",
-        color: "magenta",
-        description: "An AI-powered recipe generator integrating Claude API that serves personalized recipes in under 3 seconds through optimized prompt engineering, supporting dietary restrictions and ingredient preferences.",
-        technologies: ["React", "Claude API", "Tailwind CSS", "Firebase", "Docker", "AWS"],
-        achievements: [
-            "Built AI recipe generator serving personalized recipes in under 3 seconds through optimized prompt engineering",
-            "Integrated Claude API with async request handling for dietary restrictions and ingredient preferences",
-            "Simplified deployment with Docker containers and automated CI/CD pipeline on AWS",
-            "Reduced deployment time by 80% through containerization and automation"
-        ],
-        metrics: ["<3s Response Time", "80% Faster Deployment"],
-        links: {
-            github: "https://github.com/rpat9/MasterChef-Claude"
-        }
-    },
 ]
