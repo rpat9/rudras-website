@@ -6,12 +6,12 @@ export const experiences = [
         location: 'Braceville, IL',
         dates: 'May 2025 - July 2025',
         tags: ['Full-Stack Development', 'E-Commerce'],
-        metrics: ['45% Revenue Growth', '750+ Products'],
+        metrics: ['45% Revenue Growth', '770+ Products'],
         achievements: [
-            'Increased monthly revenue 45% to $40,000 by building a full-stack e-commerce platform for 750+ products with mobile-first design, PostgreSQL full-text search achieving sub-200ms response times, and checkout flow supporting guest and authenticated purchases',
-            'Built 89 REST API endpoints across 15 route modules using FastAPI and async PostgreSQL, implementing JWT authentication with tokens, role-based access control, and error handling achieving 99.9% uptime on critical operations',
-            'Automated POS integration synchronizing inventory across distributed store network with API client handling pagination for 100+ items per batch, SKU matching with conflict resolution, eliminating manual inventory updates',
-            'Built an admin dashboard with real-time analytics (revenue trends, order patterns, top products), bulk email system with customer segmentation, and CRUD operations for 5 modules reducing administrative overhead by 60%',
+            'Increased monthly revenue by 45% to $40k by building a full-stack ecommerce platform using React, serving 770+ products',
+            'Developed 90 REST endpoints using FastAPI, and implemented full-text search using PostgreSQL and transactional checkout',
+            'Automated POS inventory sync across a distributed store network, processing 100+ items/batch via async API and SKU matching, eliminating all manual updates',
+            'Implemented JWT authentication, RBAC, and rate limiting; built an admin dashboard with analytics, bulk pricing/discounts, CRM, and CSV export, managing 770+ products and customer base',
         ],
         skills: ['REST APIs', 'React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Tailwind CSS', 'Docker', 'JWT Authentication']
     },
@@ -25,10 +25,10 @@ export const experiences = [
         tags: ['Performance Engineering', 'Technical Leadership'],
         metrics: ['37% Cost Reduction', '6x Faster Load Time'],
         achievements: [
-            'Eliminated N+1 query pattern through network waterfall analysis, reducing dashboard load time from 30+ seconds to sub-5 seconds by implementing batch Firebase queries with a caching layer, consolidating 6 API calls to 1 endpoint',
-            'Reduced production bundle 89% (16.1MB to 1.7MB) and cut cloud hosting costs 37% by converting 15MB of PNG assets to WebP, removing 9 unused Firebase Functions, and eliminating 26 redundant npm packages',
-            'Migrated 17 Firebase Functions from deprecated Node.js 16 to Node.js 20 ahead of the October 2025 deadline, implementing error handling and async patterns across 1,474 lines of cloud function code',
-            'Refactored component architecture to eliminate 80% of redundant database reads by extracting business logic into service layer, implementing React Context API for state management, and consolidating duplicate component renders',
+            'Cut load times from 30+ seconds to sub-5 seconds by eliminating N+1 query pattern and implementing batch Firebase queries with a caching layer, consolidating 6 API calls to 1 endpoint',
+            'Reduced production bundle by 89% (16.1MB to 1.7MB), cut cloud hosting costs by 37% through asset conversion, and removed 9 unused Firebase Functions, eliminating 26 redundant npm package',
+            'Migrated core cloud infrastructure from Node.js 16 to Node.js 20 across 17 Firebase Functions, implementing error handling and modern async patterns across 36 cloud functions',
+            'Eliminated 80% of redundant database reads by restructuring the application\'s data layer and centralizing state management',
         ],
         skills: ['React', 'JavaScript', 'Node.js', 'Tailwind CSS', 'Google Cloud Platform', 'Firebase', 'Performance Optimization', 'Cloud Architecture']
     },

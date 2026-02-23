@@ -1,55 +1,68 @@
-# Rudra Patel - Developer Portfolio
+# Rudra Patel — Developer Portfolio
 
-A modern, responsive developer portfolio website built with React, TypeScript, and Tailwind CSS. This site showcases my professional experience, technical skills, and featured projects.
+[![Live Site](https://img.shields.io/badge/Live-rudras--website.vercel.app-cyan)](https://rudras-website.vercel.app/)
 
-## Overview
+Personal portfolio website showcasing my professional experience, projects, and technical skills. Built with React, TypeScript, Vite, and Tailwind CSS.
 
-This portfolio serves as my personal website to present my work as a software developer. It features a clean, dark-themed design with smooth animations and a mobile-first approach.
+## Live
 
-## Features
-
-- **Responsive Design** - Optimized for desktop and mobile devices with a dedicated sidebar navigation on mobile
-- **Smooth Animations** - Intersection Observer-based scroll animations with staggered effects
-- **Interactive Project Showcase** - Desktop view features a selectable project list with animated transitions
-- **Glass Card UI** - Modern glassmorphism design elements throughout the site
-- **Dynamic Content** - Project and experience data driven by TypeScript data files for easy updates
-
-## Sections
-
-- **Hero** - Introduction with typewriter effect and call-to-action buttons
-- **About Me** - Background, skills, and technical expertise
-- **Professional Experience** - Work history with achievements and metrics
-- **Featured Projects** - Highlighted work with technologies, achievements, and live demos
-- **Contact** - Links to email, phone, GitHub, and LinkedIn
+🔗 [rudras-website.vercel.app](https://rudras-website.vercel.app/)
 
 ## Tech Stack
 
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Icons**: React Icons
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | React 18, TypeScript, Tailwind CSS |
+| **Build** | Vite |
+| **Icons** | React Icons |
+| **Analytics** | Umami (via environment variable) |
+| **Deployment** | Vercel |
+
+## Features
+
+- Responsive design with mobile sidebar navigation
+- Scroll-triggered animations using Intersection Observer
+- Interactive project showcase with animated card transitions and staggered bullet point effects
+- Glassmorphism UI design
+- Content driven by TypeScript data files for easy updates
 
 ## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── About/              # About section with skills
-│   ├── Contact/            # Contact information and links
-│   ├── Experience/         # Professional experience timeline
-│   ├── FeaturedProjects/   # Project showcase
-│   ├── Hero/               # Landing section with typewriter
-│   └── Navbar/             # Navigation component
+│   ├── About/              # About section with skills grid
+│   ├── Contact/            # Contact links (phone, email, GitHub, LinkedIn)
+│   ├── Experience/         # Professional experience with slide-in animations
+│   ├── FeaturedProjects/   # Selectable project list with detail panel
+│   ├── Hero/               # Typewriter intro, sidebar, scroll indicator
+│   └── Navbar/             # Navigation
 ├── data/
-│   ├── projectData.ts      # Featured projects content
-│   └── resumeData.ts       # Experience and skills content
+│   ├── projectData.ts      # Project content (achievements, tech, metrics)
+│   └── resumeData.ts       # Experience content
 ├── App.tsx
 ├── main.tsx
 └── index.css
 ```
 
+## Environment Variables
+
+Create a `.env` file in the root directory for optional analytics:
+
+```env
+VITE_UMAMI_WEBSITE_ID=your_umami_website_id
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
 ## Author
 
-**Rudra Patel**  
-Computer Science @ Lewis University | Graduating May 2026  
-[GitHub](https://github.com/rpat9) • [LinkedIn](https://www.linkedin.com/in/rudrapatel09/) • [Email](mailto:rudrap26176@gmail.com)
+**Rudra Patel**
+Computer Science (AI Concentration) @ Lewis University — May 2026
+
+[Website](https://rudras-website.vercel.app/) • [GitHub](https://github.com/rpat9) • [LinkedIn](https://www.linkedin.com/in/rudrapatel09/) • [Email](mailto:rudrap26176@gmail.com)

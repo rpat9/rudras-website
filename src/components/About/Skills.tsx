@@ -1,13 +1,11 @@
 export default function Skills() {
-    const languages = ["Python", "Java", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"];
+    const languages = ["Python", "Java", "JavaScript", "TypeScript", "C", "C++", "SQL", "HTML", "CSS"];
 
-    const frameworks = ["React", "Node.js", "Spring Boot", "FastAPI", "Express.js", "Tailwind CSS", "Bootstrap"];
+    const frameworks = ["React", "Node.js", "Spring Boot", "FastAPI", "Tailwind CSS", "Docker", "GitHub Actions", "JUnit 5", "Jest", "Testcontainers"];
 
-    const databases = ["PostgreSQL", "Supabase", "MySQL", "NoSQL", "MongoDB", "Redis", "Google Firebase"];
+    const databases = ["PostgreSQL", "Redis", "Firebase", "MySQL", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP", "Azure", "TimescaleDB"];
 
-    const devtools = ["Git", "Docker", "AWS S3", "AWS IAM", "AWS CloudWatch", "AWS RDS", "AWS ECS", "AWS SecretsManager", "GCP", "Azure", "REST APIs", "System Design"];
-
-    const mlData = ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"];
+    const mlData = ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "Apache Spark", "Apache Hadoop", "LLMs"];
 
     return (
         <>
@@ -33,7 +31,7 @@ export default function Skills() {
 
                 <div className="mb-8">
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Frameworks
+                        Frameworks & Tools
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {frameworks.map((framework) => (
@@ -49,7 +47,7 @@ export default function Skills() {
 
                 <div className="mb-8">
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Databases
+                        Database & Cloud
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {databases.map((database) => (
@@ -63,26 +61,9 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div className="mb-8">
-                    <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Developer Tools
-                    </h3>
-                
-                    <div className="flex flex-wrap gap-2">
-                        {devtools.map((devtool) => (
-                            <span
-                                key={devtool}
-                                className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
-                            >
-                                {devtool}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-
                 <div>
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Machine Learning & Data Science
+                        Big Data & ML
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {mlData.map((mld) => (

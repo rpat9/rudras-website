@@ -8,7 +8,7 @@ export default function Hero() {
     const myWorks: string[] = [
         "develop impactful software.",
         "build AI systems.",
-        "develop mobile apps.",
+        "engineer cloud infrastructure.",
         "ship real products.",
         
     ];
@@ -57,7 +57,7 @@ export default function Hero() {
                             <span className="text-accent font-medium"> 
                                 large scale software systems
                             </span>
-                            . I build full-stack applications that solve real problems. Recently, I increased business revenue by 45% with an e-commerce platform used by hundreds of customers. Currently, I'm building AI systems that combine machine learning with scalable backend architecture.
+                            . I build full-stack applications and scalable backend systems that solve real problems. I'm currently seeking software engineering opportunities for 2026.
                         </p>
 
                     </div>

@@ -118,7 +118,7 @@ export default function Navbar() {
                         className={`transition-smooth ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5'}`}
                     >
                         <a 
-                            href="/resume.pdf"
+                            href="/PatelRudraResume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-outline text-lg mt-4 transition-smooth"

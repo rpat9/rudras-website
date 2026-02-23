@@ -26,15 +26,15 @@ export default function AboutMe() {
     }, []);
 
     const paragraphs = [
-        {id: 'school', content: "I'm a Computer Science major at Lewis University, graduating in May 2026, with a concentration in Artificial Intelligence and a 3.87 GPA."},
+        {id: 'school', content: "I'm a Computer Science major at Lewis University, graduating in May 2026, with a concentration in Artificial Intelligence and a 3.9 GPA."},
 
-        {id: 'hometown-liquor', content: "I've built software that drives real business results. At Hometown Liquor, I developed a full-stack e-commerce platform that increased monthly revenue by 45% to $40,000, handling 750+ products with sub-200ms search response times. I built 89 REST API endpoints using FastAPI and PostgreSQL, implemented JWT authentication and role-based access control, and created an admin dashboard that reduced administrative overhead by 60%. I also automated their POS integration to synchronize inventory across their distributed store network."},
+        {id: 'hometown-liquor', content: "I've built software that drives real business results. At Hometown Liquor, I built a full-stack e-commerce platform that increased monthly revenue by 45% to $40,000 serving 770+ products. I developed 90 REST endpoints with FastAPI and PostgreSQL, implemented JWT authentication with RBAC, and automated POS inventory sync across their distributed store network."},
 
-        {id: 'quizmaster', content: "As Lead Developer for QuizMaster, my capstone project, I tackled critical performance issues. I reduced dashboard load time from over 30 seconds to under 5 seconds by eliminating N+1 queries and implementing batch queries with caching. I cut the production bundle by 89% and reduced cloud hosting costs by 37% through asset optimization and code cleanup. I also led the migration of 17 Firebase Functions to Node.js 20 and refactored the component architecture to eliminate 80% of redundant database reads."},
+        {id: 'quizmaster', content: "As Lead Developer for QuizMaster, I reduced dashboard load times from 30+ seconds to under 5 seconds, cut the production bundle by 89%, and reduced cloud hosting costs by 37%. I also migrated 17 Firebase Functions to Node.js 20 and eliminated 80% of redundant database reads."},
 
-        {id: 'current-projects', content: "Most recently, I engineered a high-throughput Analytics Pipeline capable of processing 2.4 million events daily. By implementing Redis Streams for queuing and TimescaleDB continuous aggregates, I reduced query latency by 55x—cutting response times from 1.8 seconds to just 33 milliseconds—while visualizing real-time metrics on a custom React dashboard."},
+        {id: 'masterchef', content: "My latest work is MasterChef, an AI-powered recipe platform with React and Spring Boot. It features a PostgreSQL caching layer achieving a 40% hit rate with sub-200ms responses, AWS infrastructure defined via Terraform (ECS Fargate, RDS, ALB), and a 98-test suite covering authentication, cloud storage, and persistence."},
 
-        {id: 'focus', content: "I enjoy solving complex technical problems, whether that's optimizing database queries, building scalable APIs, or training machine learning models. My focus is on writing code that performs well and delivers measurable impact."},
+        {id: 'focus', content: "I enjoy solving complex technical problems, whether that's optimizing queries, building scalable backends, or engineering cloud infrastructure. My focus is on writing code that performs well and delivers measurable impact."},
     ];
 
     return (

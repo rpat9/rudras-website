@@ -7,16 +7,15 @@ export const projects = [
         status: "Completed",
         type: "Professional",
         color: "teal",
-        description: "A full-stack e-commerce platform that increased monthly revenue by 45% to $40,000, featuring mobile-first design, sub-200ms search performance, and automated POS integration for 750+ products.",
+        description: "A full-stack e-commerce platform built from scratch that increased monthly revenue by 45% to $40,000, featuring mobile-first design, sub-200ms search performance, automated POS integration for 770+ products, and an admin suite for pricing/quantity updates, customer management, discounts, and analytics",
         technologies: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Tailwind CSS", "Docker", "JWT"],
         achievements: [
-            "Increased monthly revenue 45% to $40,000 with full-stack e-commerce platform serving 750+ products",
-            "Built 89 REST API endpoints with FastAPI and async PostgreSQL achieving 99.9% uptime on critical operations",
-            "Implemented PostgreSQL full-text search with sub-200ms response times and checkout flow for guest/authenticated users",
-            "Automated POS integration synchronizing inventory across distributed store network with conflict resolution",
-            "Created admin dashboard with real-time analytics reducing administrative overhead by 60%"
+            'Increased monthly revenue by 45% to $40k by building a full-stack ecommerce platform using React, serving 770+ products',
+            'Developed 90 REST endpoints using FastAPI, and implemented full-text search using PostgreSQL and transactional checkout',
+            'Automated POS inventory sync across a distributed store network, processing 100+ items/batch via async API and SKU matching, eliminating all manual updates',
+            'Implemented JWT authentication, RBAC, and rate limiting; built an admin dashboard with analytics, bulk pricing/discounts, CRM, and CSV export, managing 770+ products and customer base',
         ],
-        metrics: ["45% Revenue Growth", "$40K Monthly Revenue", "750+ Products", "99.9% Uptime"],
+        metrics: ["45% Revenue Growth", "$40K Monthly Revenue", "770+ Products", "90 REST Endpoints"],
         links: {
             liveDemo: "https://www.hometownliquorsil.com/"
         },
@@ -34,11 +33,10 @@ export const projects = [
         description: "Lead developer for a capstone quiz platform where I tackled critical performance issues, reducing dashboard load time from 30+ seconds to under 5 seconds and cutting cloud hosting costs by 37%.",
         technologies: ["React", "JavaScript", "Node.js", "Firebase", "Google Cloud Platform", "GitHub Actions", "Tailwind CSS"],
         achievements: [
-            "Eliminated N+1 query pattern reducing dashboard load time from 30+ seconds to sub-5 seconds through batch Firebase queries and caching",
-            "Reduced production bundle 89% (16.1MB to 1.7MB) by converting PNG assets to WebP and removing unused dependencies",
-            "Cut cloud hosting costs 37% through asset optimization and code cleanup",
-            "Migrated 17 Firebase Functions from Node.js 16 to Node.js 20 ahead of October 2025 deadline",
-            "Refactored component architecture eliminating 80% of redundant database reads using service layer pattern"
+            'Cut load times from 30+ seconds to sub-5 seconds by eliminating N+1 query pattern and implementing batch Firebase queries with a caching layer, consolidating 6 API calls to 1 endpoint',
+            'Reduced production bundle by 89% (16.1MB to 1.7MB), cut cloud hosting costs by 37% through asset conversion, and removed 9 unused Firebase Functions, eliminating 26 redundant npm package',
+            'Migrated core cloud infrastructure from Node.js 16 to Node.js 20 across 17 Firebase Functions, implementing error handling and modern async patterns across 36 cloud functions',
+            'Eliminated 80% of redundant database reads by restructuring the application\'s data layer and centralizing state management',
         ],
         metrics: ["6x Faster Load Time", "89% Smaller Bundle", "37% Cost Reduction"],
         links: {
@@ -58,14 +56,15 @@ export const projects = [
         description: "An analytics system that ingests 100,000 events per hour continuously, processes them in real-time, stores them efficiently, visualizes metrics on a live dashboard, and the ability to query historical data.",
         technologies: ["Node.js", "TypeScript", "React", "TimescaleDB", "Redis Streams", "Docker"],
         achievements: [
-            "Built event processing pipeline handling 2.4M events over 24 hours (28 events/sec, 280 events/sec burst) with Redis Streams consumer groups achieving <10ms latency and zero message loss",
-            "Reduced dashboard query latency 55x (1.8s → 33ms) by implementing TimescaleDB continuous aggregates with 3 materialization levels (minute/hour/day) and automatic refresh policies, eliminating real-time aggregation",
-            "Developed REST API with 5-38ms response times using strategic caching (5-10s TTL) and continuous aggregates, powering React dashboard with auto-refresh polling (5s intervals) and Recharts visualization across 2.4M+  records",
+            "Built an event processing pipeline handling 2.4M events in 24 hours, achieving under 10ms latency and zero message loss",
+            "Reduced dashboard query latency by 55x (1.8s to 33ms) by precomputing aggregations at 3 time levels (minute/hour/day) and automatic refresh policies, eliminating live computation at query time",
+            "Developed REST API with 5-38ms response times using caching (5-10s TTL), aggregates, and built a React dashboard with auto-refresh polling (5s intervals) with visualization across 2.4M+ records",
         ],
-        metrics: ["2.4M events daily", "5-38ms API response times"],
+        metrics: ["2.4M events daily", "5-38ms API response times", "33ms latency"],
         links: {
             github: "https://github.com/rpat9/Analytics-Pipeline",
         },
+        featured: true,
     },
 
     {
@@ -79,9 +78,10 @@ export const projects = [
         description: "An AI-powered recipe generator integrating AI models Ollama/Mistral that serve personalized recipes based on dietary restrictions, and ingredient preferences. Built with production-grade backend infrastructure utilizing Spring Boot, AWS S3, RDS, IAM, CloudWatch, SecretsManager, ECS.",
         technologies: ["TypeScript", "Java", "Spring Boot", "AWS", "Docker", "PostgreSQL", "Terraform"],
         achievements: [
-            "Developed full-stack AI recipe platform with React and Java/Spring Boot, generating personalized recipes from 3-15 ingredients with dietary filters (vegan, keto, gluten-free), user authentication, and recipe management using AWS S3 (save, export, view history)",
-            "Built AI orchestration layer integrating local LLM (Ollama/Mistral) with PostgreSQL caching and automatic retry logic, achieving 40% cache hit rate and sub-200ms response times for cached requests, reducing redundant AI calls",
-            "Implemented security with JWT authentication, password hashing, role-based access control, and designed cloud infrastructure using Terraform and Docker with AWS IAM policies, Secrets Manager for credentials, and encrypted storage (RDS, S3)"
+            "Built a full-stack AI recipe platform with React and Spring Boot, implementing JWT authentication with access/refresh tokens, an LLM layer with automatic retry logic, and complete tracking of tokens, latency, and cost per generation",
+            "Designed PostgreSQL caching layer for AI responses, achieving 40% hit rate, cutting redundant AI calls, and delivering sub-200ms response times for repeat queries",
+            "Defined AWS infrastructure using Terraform with ECS Fargate, RDS, ALB, and Secrets Manager, with least-privileged IAM and CloudWatch monitoring",
+            "Wrote a 98-test suite covering unit, integration, API layers, validating authentication, cloud storage, and database persistence"
         ],
         metrics: ["3-15 Ingredients", "40% cache hit rate"],
         links: {
@@ -101,10 +101,9 @@ export const projects = [
         description: "A sentiment classification system achieving 78% accuracy on 241K social media posts using hyperparameter-tuned Logistic Regression with TF-IDF vectorization, outperforming pretrained RoBERTa on noisy data.",
         technologies: ["Python", "Scikit-learn", "TF-IDF", "GridSearchCV", "Pandas", "NumPy"],
         achievements: [
-            "Achieved 78% accuracy on 241K social media posts using hyperparameter-tuned Logistic Regression with TF-IDF vectorization",
-            "Outperformed pretrained RoBERTa (54%) on noisy social media data through GridSearchCV with 5-fold cross-validation",
-            "Demonstrated deep learning limitations through comparative analysis showing task-tuned traditional models beat complex architectures",
-            "Proved model-data alignment matters more than architectural complexity through systematic experimentation"
+            "Built a sentiment classifier on 241K posts using Logistic Regression with TF-IDF, achieving 78% test accuracy",
+            "Performed hyperparameter optimization with GridSearchCV (192 combinations, 5-fold CV), achieving strong generalization",
+            "Evaluated model robustness across datasets, showing domain alignment impacts performance more than model complexity",
         ],
         metrics: ["78% Accuracy", "241K Posts Analyzed"],
         links: {
