@@ -37,6 +37,7 @@ export const projects = [
             'Reduced production bundle by 89% (16.1MB to 1.7MB), cut cloud hosting costs by 37% through asset conversion, and removed 9 unused Firebase Functions, eliminating 26 redundant npm package',
             'Migrated core cloud infrastructure from Node.js 16 to Node.js 20 across 17 Firebase Functions, implementing error handling and modern async patterns across 36 cloud functions',
             'Eliminated 80% of redundant database reads by restructuring the application\'s data layer and centralizing state management',
+            'Led a team of 6 by coordinating agile sprints and weekly meetings, delivering 38+ features and improvements',
         ],
         metrics: ["6x Faster Load Time", "89% Smaller Bundle", "37% Cost Reduction"],
         links: {
@@ -53,12 +54,12 @@ export const projects = [
         status: "Completed",
         type: "Personal",
         color: "blue",
-        description: "An analytics system that ingests 100,000 events per hour continuously, processes them in real-time, stores them efficiently, visualizes metrics on a live dashboard, and the ability to query historical data.",
-        technologies: ["Node.js", "TypeScript", "React", "TimescaleDB", "Redis Streams", "Docker"],
+        description: "A multi-service event pipeline system that ingests 100,000 events per hour continuously, processes them in real-time, stores them efficiently, visualizes metrics on a live dashboard, and the ability to query historical data.",
+        technologies: ["Node.js", "TypeScript", "Redis Streams", "TimescaleDB", "Docker", "React"],
         achievements: [
-            "Built an event processing pipeline handling 2.4M events in 24 hours, achieving under 10ms latency and zero message loss",
-            "Reduced dashboard query latency by 55x (1.8s to 33ms) by precomputing aggregations at 3 time levels (minute/hour/day) and automatic refresh policies, eliminating live computation at query time",
-            "Developed REST API with 5-38ms response times using caching (5-10s TTL), aggregates, and built a React dashboard with auto-refresh polling (5s intervals) with visualization across 2.4M+ records",
+            "Engineered a multi-service event pipeline handling 2.4M+ events / 24 hours, sustaining 28 events/sec with zero message loss across 1.5 hours of stability testing",
+            "Reduced dashboard query latency by 55x (1.8s to 33ms) using TimescaleDB continuous aggregates at minute/hour/day, eliminating live computation at query time",
+            "Built REST API with p95 response times of 5-38ms using Redis caching (5-10s TTL) serving 2.4M+ records",
         ],
         metrics: ["2.4M events daily", "5-38ms API response times", "33ms latency"],
         links: {
@@ -78,10 +79,10 @@ export const projects = [
         description: "An AI-powered recipe generator integrating AI models Ollama/Mistral that serve personalized recipes based on dietary restrictions, and ingredient preferences. Built with production-grade backend infrastructure utilizing Spring Boot, AWS S3, RDS, IAM, CloudWatch, SecretsManager, ECS.",
         technologies: ["TypeScript", "Java", "Spring Boot", "AWS", "Docker", "PostgreSQL", "Terraform"],
         achievements: [
-            "Built a full-stack AI recipe platform with React and Spring Boot, implementing JWT authentication with access/refresh tokens, an LLM layer with automatic retry logic, and complete tracking of tokens, latency, and cost per generation",
-            "Designed PostgreSQL caching layer for AI responses, achieving 40% hit rate, cutting redundant AI calls, and delivering sub-200ms response times for repeat queries",
-            "Defined AWS infrastructure using Terraform with ECS Fargate, RDS, ALB, and Secrets Manager, with least-privileged IAM and CloudWatch monitoring",
-            "Wrote a 98-test suite covering unit, integration, API layers, validating authentication, cloud storage, and database persistence"
+            "Built a full-stack AI recipe platform with React and Spring Boot, implementing JWT authentication with access/refresh tokens, an LLM orchestration layer (Ollama) with automatic retry, and tracking of tokens, cost, and latency",
+            "Designed a PostgreSQL AI response cache achieving 40% hit rate, delivering sub-200ms response times for repeat queries, and cutting redundant LLM calls",
+            "Defined AWS infrastructure in Terraform (ECS Fargate, S3, RDS, ALB, Secrets Manager) with least-privileged IAM and CloudWatch logs, reproduced locally with LocalStack",
+            "Wrote 98+ unit and integration tests to validate API layer, authentication, cloud storage, and database persistence"
         ],
         metrics: ["3-15 Ingredients", "40% cache hit rate"],
         links: {
@@ -92,18 +93,18 @@ export const projects = [
 
     {
         id: 5,
-        title: "Social Media Sentiment Classifier",
+        title: "Sentiment Classifier",
         category: "Machine Learning",
         dates: "Nov 2025",
         status: "Completed",
         type: "Academic",
         color: "orange",
-        description: "A sentiment classification system achieving 78% accuracy on 241K social media posts using hyperparameter-tuned Logistic Regression with TF-IDF vectorization, outperforming pretrained RoBERTa on noisy data.",
+        description: "A sentiment classification system achieving 78% accuracy on 241K+ social media posts using hyperparameter-tuned Logistic Regression with TF-IDF vectorization, outperforming pretrained RoBERTa on noisy data.",
         technologies: ["Python", "Scikit-learn", "TF-IDF", "GridSearchCV", "Pandas", "NumPy"],
         achievements: [
-            "Built a sentiment classifier on 241K posts using Logistic Regression with TF-IDF, achieving 78% test accuracy",
+            "Built a sentiment classifier on 241,000+ posts using Logistic Regression with TF-IDF, achieving 78% test accuracy",
             "Performed hyperparameter optimization with GridSearchCV (192 combinations, 5-fold CV), achieving strong generalization",
-            "Evaluated model robustness across datasets, showing domain alignment impacts performance more than model complexity",
+            "Showed domain alignment impacts performance more than model complexity through cross-dataset evaluation",
         ],
         metrics: ["78% Accuracy", "241K Posts Analyzed"],
         links: {

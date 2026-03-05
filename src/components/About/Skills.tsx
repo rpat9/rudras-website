@@ -1,11 +1,11 @@
 export default function Skills() {
-    const languages = ["Python", "Java", "JavaScript", "TypeScript", "C", "C++", "SQL", "HTML", "CSS"];
+    const languages = ["Python", "Java", "TypeScript", "JavaScript", "C", "C++", "SQL", "HTML", "CSS"];
 
-    const frameworks = ["React", "Node.js", "Spring Boot", "FastAPI", "Tailwind CSS", "Docker", "GitHub Actions", "JUnit 5", "Jest", "Testcontainers"];
+    const frameworks = ["React", "Node.js", "Spring Boot", "FastAPI", "Tailwind CSS", "Docker", "GitHub Actions", "JUnit", "Jest"];
 
-    const databases = ["PostgreSQL", "Redis", "Firebase", "MySQL", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP", "Azure", "TimescaleDB"];
+    const databases = ["PostgreSQL", "Redis", "Firebase", "MySQL", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP", "Azure"];
 
-    const mlData = ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "Apache Spark", "Apache Hadoop", "LLMs"];
+    const mlData = ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy", "Apache Spark", "Apache Hadoop", "LLMs"];
 
     return (
         <>
