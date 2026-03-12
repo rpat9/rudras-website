@@ -43,7 +43,7 @@ export default function Hero() {
                             I'm an incoming Master of Computer Science student at{' '}
                             <span className="text-accent font-medium">
                                 <a
-                                    href="https://siebelcenter.illinois.edu/academics/graduate-programs/master-computer-science"
+                                    href="https://siebelschool.illinois.edu/"
                                     target="_blank"
                                     className="hover:underline"
                                 >
