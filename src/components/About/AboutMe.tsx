@@ -26,7 +26,7 @@ export default function AboutMe() {
     }, []);
 
     const paragraphs = [
-        {id: 'school', content: "I'm a Computer Science major at Lewis University, graduating in May 2026, with a concentration in Artificial Intelligence and a 3.9 GPA."},
+    {id: 'school', content: "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026), currently completing my B.S. in Computer Science at Lewis University with a concentration in Artificial Intelligence and a 3.9 GPA."},
 
         {id: 'hometown-liquor', content: "I've built software that drives real business results. At Hometown Liquor, I built a full-stack e-commerce platform that increased monthly revenue by 45% to $40,000 serving 770+ products. I developed 90 REST endpoints with FastAPI and PostgreSQL, implemented JWT authentication with RBAC, and automated POS inventory sync across their distributed store network."},
 

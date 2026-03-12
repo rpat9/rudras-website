@@ -40,15 +40,25 @@ export default function Hero() {
 
                     <div className="pt-6 w-full lg:w-[55%]">
                         <p className="text-secondary leading-relaxed text-base md:text-lg">
-                            I'm a Computer Science major at{' '}
+                            I'm an incoming Master of Computer Science student at{' '}
+                            <span className="text-accent font-medium">
+                                <a
+                                    href="https://siebelcenter.illinois.edu/academics/graduate-programs/master-computer-science"
+                                    target="_blank"
+                                    className="hover:underline"
+                                >
+                                    University of Illinois Urbana-Champaign
+                                </a>
+                            </span>
+                            {' '}
+                            (Fall 2026), currently completing my B.S. in Computer Science at{' '}
                             <span className="text-accent font-medium"> 
                                 <a href="https://www.lewisu.edu/" 
                                 target="_blank"
                                 className="hover:underline"
                                 >Lewis University</a>
                             </span>
-                            {' '}
-                            specializing in{' '}
+                            , with a focus on{' '}
                             <span className="text-accent font-medium"> 
                                 artificial intelligence
                             </span>
@@ -57,7 +67,7 @@ export default function Hero() {
                             <span className="text-accent font-medium"> 
                                 large scale software systems
                             </span>
-                            . I build full-stack applications and scalable backend systems that solve real problems. I'm currently seeking software engineering opportunities for 2026.
+                            . I build full-stack applications and scalable backend systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
                         </p>
 
                     </div>
