@@ -382,6 +382,10 @@ nav.scrolled {
     color: #dafa8e;
 }
 
+.project-color-purple {
+    color: #a78bfa;
+}
+
 .project-dot-teal {
     background-color: #14b8a6;
 }
@@ -402,6 +406,10 @@ nav.scrolled {
     background-color: #dafa8e;
 }
 
+.project-dot-purple {
+    background-color: #a78bfa;
+}
+
 .project-border-teal {
     border-left-color: #14b8a6;
 }
@@ -420,6 +428,10 @@ nav.scrolled {
 
 .project-border-yellow {
     border-left-color: #dafa8e;
+}
+
+.project-border-purple {
+    border-left-color: #a78bfa;
 }
 
 /* Project Detail Panel Animation */

@@ -26,15 +26,15 @@ export default function AboutMe() {
     }, []);
 
     const paragraphs = [
-    {id: 'school', content: "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026), currently completing my B.S. in Computer Science at Lewis University with a concentration in Artificial Intelligence and a 3.9 GPA."},
+        {id: 'school', content: "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I'm finishing my B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (5x)."},
 
-        {id: 'hometown-liquor', content: "I've built software that drives real business results. At Hometown Liquor, I built a full-stack e-commerce platform that increased monthly revenue by 45% to $40,000 serving 770+ products. I developed 90 REST endpoints with FastAPI and PostgreSQL, implemented JWT authentication with RBAC, and automated POS inventory sync across their distributed store network."},
+        {id: 'coursework', content: "My core coursework includes Machine Learning, Artificial Intelligence, Big Data Systems (Apache Spark, Hadoop, Arrow, Hive, Distributed Systems), Natural Language Processing, and Computer Organization in C/C++."},
 
-        {id: 'quizmaster', content: "As Lead Developer for QuizMaster, I led a team of 6 using agile sprints to deliver 38+ features. I reduced dashboard load times from 30+ seconds to under 5 seconds, cut the production bundle by 89%, and reduced cloud hosting costs by 37%. I also migrated 17 Firebase Functions to Node.js 20 and eliminated 80% of redundant database reads."},
+        {id: 'hometown-liquor', content: "At Hometown Liquor, I shipped a full-stack e-commerce platform serving 150+ active users and 770+ products, increasing revenue by 45% to $25k/month. I built semantic search with pgvector, implemented backend services across 92 REST endpoints, and automated real-time POS inventory sync with zero manual updates."},
 
-        {id: 'masterchef', content: "My latest work is MasterChef, an AI-powered recipe platform with React and Spring Boot. It features a PostgreSQL caching layer achieving a 40% hit rate with sub-200ms responses, AWS infrastructure defined via Terraform (ECS Fargate, RDS, ALB), and a 98-test suite covering authentication, cloud storage, and persistence."},
+        {id: 'quizmaster', content: "As Lead Developer for QuizMaster, I led a team of 6 delivering 38+ features. I reduced load times from 30s+ to sub-5s, shrank the production bundle by 89% (16.1MB to 1.7MB), reduced cloud costs by 37%, and migrated 17 cloud functions from Node.js 16 to 20."},
 
-        {id: 'focus', content: "I enjoy solving complex technical problems, whether that's optimizing queries, building scalable backends, or engineering cloud infrastructure. My focus is on writing code that performs well and delivers measurable impact."},
+        {id: 'focus', content: "I enjoy building resilient backend systems, optimizing performance, and delivering measurable results. Right now, I'm building NeuralGate. It's a distributed LLM inference gateway focused on OpenAI-compatible APIs, low-latency routing, observability, and reliable multi-provider failover while continuing work on full-stack AI apps, real-time analytics pipelines, and high-performance data tooling in C++."},
     ];
 
     return (

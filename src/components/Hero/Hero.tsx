@@ -7,10 +7,9 @@ export default function Hero() {
 
     const myWorks: string[] = [
         "develop impactful software.",
-        "build AI systems.",
-        "engineer cloud infrastructure.",
+        "build AI & ML systems.",
+        "engineer resilient backends.",
         "ship real products.",
-        
     ];
 
     const scrollToSection = (sectionId: string) => {
@@ -58,15 +57,13 @@ export default function Hero() {
                                 className="hover:underline"
                                 >Lewis University</a>
                             </span>
-                            , with a focus on{' '}
+                            {' '}
+                            with a concentration in{' '}
                             <span className="text-accent font-medium"> 
                                 artificial intelligence
                             </span>
-                            {' '}
-                            and{' '}
-                            <span className="text-accent font-medium"> 
-                                large scale software systems
-                            </span>
+                            {' '}and a{' '}
+                            <span className="text-accent font-medium">3.9 GPA</span>
                             . I build full-stack applications and scalable backend systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
                         </p>
 
