@@ -42,7 +42,7 @@ export default function ProfessionalExperience() {
                         transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
                     }}
                 >
-                    Professional Experience
+                    Experience, Hackathons & Competitions
                 </h2>
             </div>
 

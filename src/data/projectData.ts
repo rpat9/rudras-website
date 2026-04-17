@@ -2,21 +2,21 @@ export const projects = [
     {
         id: 1,
         title: "Hometown Liquor",
-        category: "Full-Stack Development",
+        category: "E-Commerce Platform Engineering",
         dates: "May 2025 - Jul 2025",
         status: "Completed",
         type: "Professional",
         color: "teal",
-        description: "A full-stack e-commerce platform delivered end-to-end with semantic product search, automated POS inventory sync, and a complete admin suite for analytics, pricing, inventory, and CRM.",
-        technologies: ["React", "TypeScript", "FastAPI", "PostgreSQL", "pgvector", "Docker", "JWT"],
+        description: "A production e-commerce platform built with React, TypeScript, and FastAPI that drove measurable revenue growth, introduced semantic product search, and automated inventory sync through third-party POS integration.",
+        technologies: ["React", "TypeScript", "FastAPI", "Python", "SQLAlchemy ORM", "PostgreSQL", "pgvector", "Pytest", "Docker", "JWT"],
         achievements: [
-            "Shipped a full-stack e-commerce platform end-to-end (React + FastAPI + PostgreSQL), serving 150+ active users and 770+ products, increasing revenue by 45% to $25k/month",
-            "Built semantic product search using pgvector embeddings, enabling natural language queries with sub-200ms response times",
-            "Engineered real-time POS inventory sync against a third-party vendor API, processing 100+ products/batch via async REST with SKU matching, eliminating all manual inventory updates",
-            "Designed backend service layer (auth, orders, inventory, analytics, coupons) with JWT + refresh token rotation, RBAC, rate limiting, and full audit logging across 92 REST endpoints",
-            "Delivered admin dashboard with sales analytics, bulk pricing, inventory management, CRM, and automated low-stock alerting; implemented coupon engine with usage limits, per-user restrictions, and category targeting"
+            "Increased monthly revenue by 45% to $25k by shipping a full-stack e-commerce platform with 150+ users and 770+ products using React, TypeScript, and FastAPI with SQLAlchemy ORM",
+            "Deployed production REST API backend (92 endpoints) using Python/FastAPI with JWT authentication, refresh token rotation, RBAC, rate limiting, and structured audit logging across all requests",
+            "Built semantic search feature using Python and PostgreSQL pgvector embeddings, enabling natural language product queries with sub-200ms response times against a 770+ product catalog",
+            "Reduced internal manual inventory checks by 90% by building a real-time POS sync tool connected to a third-party API using async REST and batch processing 100+ products per batch",
+            "Implemented CI/CD pipeline via Docker containerization enabling consistent, repeatable deployments; wrote 85+ unit and integration tests using pytest ensuring reliability across auth, order, and inventory service layers"
         ],
-        metrics: ["45% Revenue Growth", "$25K Monthly Revenue", "150+ Active Users", "770+ Products", "92 REST Endpoints"],
+        metrics: ["45% Revenue Growth", "$25K Monthly Revenue", "150+ Users", "770+ Products", "92 REST Endpoints", "90% Fewer Manual Checks", "85+ Tests"],
         links: {
             liveDemo: "https://www.hometownliquorsil.com/"
         },
@@ -26,21 +26,20 @@ export const projects = [
     {
         id: 2,
         title: "QuizMaster",
-        category: "Performance Engineering",
+        category: "Full-Stack Platform Engineering",
         dates: "Aug 2025 - Dec 2025",
         status: "Completed",
         type: "Academic",
         color: "yellow",
-        description: "Capstone platform where I led performance and infrastructure optimization, dramatically improving load times, bundle size, and cloud cost efficiency.",
-        technologies: ["React", "JavaScript", "Node.js", "Firebase Auth", "Google Cloud Platform", "Jest", "React Testing Library"],
+        description: "A full-stack quiz and flashcard platform built in React and Node.js with custom quiz creation, spaced-repetition study workflows, and major backend/frontend performance improvements.",
+        technologies: ["React", "JavaScript", "Node.js", "Firebase Auth", "Google Cloud Platform", "CI/CD", "Caching"],
         achievements: [
-            "Cut load times from 30s+ to sub-5s by eliminating N+1 query patterns and consolidating 6 Firebase API calls into a single batched endpoint with caching layer",
-            "Reduced production bundle by 89% (16.1MB to 1.7MB) and cut cloud hosting costs by 37% by removing 9 unused Firebase Functions and 26 redundant npm packages",
-            "Integrated Firebase Auth and migrated 17 cloud functions from Node.js 16 to 20",
-            "Eliminated 80% redundant DB reads by restructuring the data layer and centralizing state management; unit tested with Jest and React Testing Library",
-            "Led team of 6 by coordinating agile sprints and weekly meetings, delivering 38+ features and improvements"
+            "Led a team of 6 engineers to ship a full-stack quiz and flashcard platform in React and Node.js with a 5K+ question bank, custom quiz creation, user authentication, and spaced-repetition study",
+            "Eliminated Node.js study session latency bottleneck reducing per-request response times from 5-7s to under 10ms, improving reliability for concurrent users",
+            "Cut dashboard load times from 30s+ to under 5s by fixing N+1 query patterns and adding a caching layer, reducing database reads by 80%",
+            "Refactored 1,400+ lines of React code into reusable UI components and removed unused GCP infrastructure and dependencies, restoring broken CI/CD pipelines and accelerating development velocity"
         ],
-        metrics: ["6x Faster Load Time", "89% Smaller Bundle", "37% Cost Reduction", "38+ Features Delivered"],
+        metrics: ["Team of 6 Engineers", "5K+ Question Bank", "<10ms Study Session Latency", "80% Fewer DB Reads"],
         links: {
             github: "https://github.com/QuizMasterInc/QuizMaster"
         },
@@ -73,21 +72,21 @@ export const projects = [
 
     {
         id: 4,
-        title: "Analytics Pipeline",
+        title: "Real Time Event Processor",
         category: "Backend Development",
         dates: "Jan 2026",
         status: "Completed",
         type: "Personal",
         color: "blue",
-        description: "A real-time event processing engine built as a multi-service pipeline for ingestion, aggregation, and fast analytics queries at sustained throughput with zero message loss under stability testing.",
-        technologies: ["Node.js", "TypeScript", "Redis", "TimescaleDB", "Docker"],
+        description: "An event-driven processing pipeline built with Node.js and TypeScript for high-throughput ingestion, low-latency analytics, and reliable API delivery at scale.",
+        technologies: ["Node.js", "TypeScript", "Express.js", "Redis Streams", "Redis", "TimescaleDB"],
         achievements: [
-            "Engineered a multi-service event pipeline processing 2.4M+ events at 28 events/sec sustained throughput with zero message loss over 1.5 hours using Redis Streams consumer groups",
-            "Reduced dashboard query latency by 55x (1.828ms to 0.033ms) using TimescaleDB continuous aggregates at minute/hour/day intervals",
-            "Implemented batch event processing (100 events/batch) with schema validation, transactional writes, and conflict-safe inserts, reducing database transactions by 60-70%",
-            "Built REST API with p95 response times of 5-38ms using Redis caching (5-10s TTL) serving 2.4M+ records",
+            "Engineered an event-driven processing pipeline using Node.js and TypeScript processing 2.4M+ events (28 events/sec) with zero message loss, leveraging Redis Streams consumer groups",
+            "Reduced dashboard query latency by 55x (1.828ms to 0.033ms) using TimescaleDB continuous aggregates at minute/hour/day, eliminating live computation at query time",
+            "Implemented batch processing (100 events/batch) with schema validation, transactional writes, and conflict-safe inserts reducing database transactions by 60-70% versus single-event processing",
+            "Built a REST API using Express.js and Redis caching with p95 response times of 5-38ms and 5-10s TTL, serving 2.4M+ records",
         ],
-        metrics: ["2.4M+ Events", "28 Events/Sec", "55x Faster Queries", "5-38ms p95 API"],
+        metrics: ["2.4M+ Events", "28 Events/Sec", "55x Faster Queries", "60-70% Fewer DB Transactions", "5-38ms p95 API"],
         links: {
             github: "https://github.com/rpat9/Analytics-Pipeline"
         },
@@ -98,7 +97,7 @@ export const projects = [
         id: 5,
         title: "CSV Data Analysis",
         category: "Systems & Data Engineering",
-        dates: "2025",
+        dates: "March 2026",
         status: "Completed",
         type: "Personal",
     color: "purple",
@@ -110,27 +109,27 @@ export const projects = [
         ],
         metrics: ["Copy-on-Write DataFrame", "RFC 4180 Parser", "Typed Query Engine"],
         links: {
-            github: ""
+            github: "https://github.com/rpat9/CsvDataAnalysis"
         },
         featured: true
     },
 
     {
         id: 6,
-        title: "Sentiment Classifier",
+        title: "NLP Classification Pipline",
         category: "Machine Learning",
         dates: "Nov 2025",
         status: "Completed",
         type: "Academic",
         color: "orange",
-        description: "A sentiment classification system achieving strong performance on noisy social media text using TF-IDF and hyperparameter-tuned Logistic Regression.",
-        technologies: ["Python", "Scikit-learn", "TF-IDF", "GridSearchCV", "Pandas", "NumPy"],
+        description: "An end-to-end NLP classification workflow comparing classical and transformer-based approaches under a unified evaluation framework on noisy real-world sentiment data.",
+        technologies: ["Python", "Scikit-learn", "HuggingFace", "Sentence-BERT"],
         achievements: [
-            "Built a sentiment classifier on 241,000+ posts using Logistic Regression with TF-IDF, achieving 78% test accuracy",
-            "Performed hyperparameter optimization with GridSearchCV (192 combinations, 5-fold CV) for robust generalization",
-            "Evaluated model behavior across datasets to show how domain alignment can outweigh raw model complexity"
+            "Built an end-to-end NLP pipeline in Python with 240K+ samples, comparing TF-IDF with Logistic Regression, Naive Bayes, and RoBERTa within a unified evaluation framework",
+            "Ran 190+ hyperparameter experiments with 5-fold cross-validation, with Logistic Regression achieving 78% accuracy and outperforming pretrained RoBERTa by 23.4% on noisy domain-mismatched data",
+            "Applied Sentence-BERT embeddings with t-SNE across 5,000 samples, revealing distinguishable but overlapping sentiment clusters, confirming dataset ambiguity and validating the 78% accuracy ceiling"
         ],
-        metrics: ["78% Accuracy", "241K+ Posts", "192 Hyperparameter Configurations"],
+        metrics: ["78% Accuracy", "240K+ Samples", "190+ Hyperparameter Experiments", "5,000 t-SNE Samples"],
         links: {
             github: "https://github.com/MachineLearningLU/Models"
         },

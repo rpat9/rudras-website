@@ -2,37 +2,52 @@ export const experiences = [
     {
         id: 1,
         title: 'Software Engineer',
-        company: 'Hometown Liquor',
+        company: 'Hometown Liquor - E Commerce Platform',
         location: 'Remote',
         dates: 'May 2025 - Jul 2025',
-        tags: ['Full-Stack Development', 'E-Commerce', 'Backend Engineering'],
-        metrics: ['45% Revenue Growth', '$25K Monthly Revenue', '150+ Active Users', '770+ Products', '92 REST Endpoints'],
+        tags: ['E-Commerce Platform', 'Backend Engineering', 'Production API'],
+        metrics: ['45% Revenue Growth', '$25K Monthly Revenue', '150+ Users', '770+ Products', '92 REST Endpoints', '90% Fewer Manual Checks', '85+ Tests'],
         achievements: [
-            'Shipped a full-stack e-commerce platform end-to-end (React + FastAPI + PostgreSQL), serving 150+ active users and 770+ products, increasing revenue by 45% to $25k/month',
-            'Built semantic product search using pgvector embeddings, enabling natural language queries with sub-200ms response times',
-            'Engineered real-time POS inventory sync against a third-party vendor API, processing 100+ products/batch via async REST with SKU matching, eliminating all manual inventory updates',
-            'Designed backend service layer (auth, orders, inventory, analytics, coupons) with JWT + refresh token rotation, RBAC, rate limiting, and full audit logging across 92 REST endpoints',
-            'Delivered admin dashboard with sales analytics, bulk pricing, inventory management, CRM, and automated low-stock alerts; implemented coupon engine with usage limits and category targeting',
+            'Increased monthly revenue by 45% to $25k by shipping a full-stack e-commerce platform with 150+ users and 770+ products using React, TypeScript, and FastAPI with SQLAlchemy ORM',
+            'Deployed production REST API backend (92 endpoints) using Python/FastAPI with JWT authentication, refresh token rotation, RBAC, rate limiting, and structured audit logging across all requests',
+            'Built semantic search feature using Python and PostgreSQL pgvector embeddings, enabling natural language product queries with sub-200ms response times against a 770+ product catalog',
+            'Reduced internal manual inventory checks by 90% by building a real-time POS sync tool connected to a third-party API using async REST and batch processing 100+ products per batch',
+            'Implemented CI/CD pipeline via Docker containerization enabling consistent, repeatable deployments; wrote 85+ unit and integration tests using pytest across auth, order, and inventory service layers',
         ],
-        skills: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgvector', 'Docker', 'JWT', 'RBAC']
+        skills: ['React', 'TypeScript', 'FastAPI', 'Python', 'SQLAlchemy ORM', 'PostgreSQL', 'pgvector', 'Pytest', 'Docker', 'JWT', 'RBAC']
     },
 
     {
         id: 2,
         title: 'Lead Developer (Capstone)',
-        company: 'QuizMaster',
+        company: 'QuizMaster - Quiz & Flashcard Platform',
         location: 'Romeoville, IL',
         dates: 'Aug 2025 - Dec 2025',
-        tags: ['Performance Engineering', 'Technical Leadership'],
-        metrics: ['37% Cost Reduction', '6x Faster Load Time'],
+        tags: ['Technical Leadership', 'Performance Engineering', 'Full-Stack Development'],
+        metrics: ['Team of 6 Engineers', '5K+ Question Bank', '<10ms Study Session Latency', '80% Fewer DB Reads'],
         achievements: [
-            'Cut load times from 30s+ to sub-5s by eliminating N+1 query patterns and consolidating 6 Firebase API calls into a single batched endpoint with caching',
-            'Reduced production bundle by 89% (16.1MB to 1.7MB) and cut cloud hosting costs by 37% by removing 9 unused Firebase Functions and 26 redundant npm packages',
-            'Integrated Firebase Auth and migrated 17 cloud functions from Node.js 16 to 20',
-            'Eliminated 80% redundant DB reads by restructuring the data layer and centralizing state management; unit tested with Jest and React Testing Library',
-            'Led a team of 6 by coordinating agile sprints and weekly meetings, delivering 38+ features and improvements',
+            'Led a team of 6 engineers to ship a full-stack quiz and flashcard platform in React and Node.js with a 5K+ question bank, custom quiz creation, user authentication, and spaced-repetition study',
+            'Eliminated Node.js study session latency bottleneck, reducing per-request response times from 5-7s to under 10ms and improving reliability for concurrent users',
+            'Cut dashboard load times from 30s+ to under 5s by fixing N+1 query patterns and adding a caching layer, reducing database reads by 80%',
+            'Refactored 1,400+ lines of React code into reusable UI components and removed unused GCP infrastructure and dependencies, restoring broken CI/CD pipelines and accelerating development velocity',
         ],
-        skills: ['React', 'JavaScript', 'Node.js', 'Firebase Auth', 'Google Cloud Platform', 'Jest', 'React Testing Library', 'Performance Optimization']
+        skills: ['React', 'JavaScript', 'Node.js', 'Firebase Auth', 'Google Cloud Platform', 'CI/CD', 'Performance Optimization', 'Caching']
+    },
+
+    {
+        id: 3,
+        title: 'Hackathons & Competitions',
+        company: 'ASA DataFest - American Statistical Association',
+        location: 'Team Competition',
+        dates: 'Apr 2026',
+        tags: ['Hackathon', 'Data Engineering', 'Data Science'],
+        metrics: ['48-Hour Competition', '7.6M+ Patient Encounters', '79K Patients Analyzed'],
+        achievements: [
+            'Built an ETL pipeline in a 48-hour team competition using Python, cleaning and joining 7.6M+ patient encounters from a worldwide healthcare dataset',
+            'Designed classification algorithms in Python for 79K patients, identifying 83.6% hypertension and 74.4% diabetes disengagement rates',
+            'Presented actionable insights on patient outreach gaps to support data-driven healthcare intervention strategies',
+        ],
+        skills: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'ETL', 'Classification']
     },
 
 ]
