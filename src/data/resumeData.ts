@@ -4,34 +4,34 @@ export const experiences = [
         title: 'Software Engineer',
         company: 'Hometown Liquor - E Commerce Platform',
         location: 'Remote',
-        dates: 'May 2025 - Jul 2025',
+        dates: 'May 2025 - May 2026',
         tags: ['E-Commerce Platform', 'Backend Engineering', 'Production API'],
-        metrics: ['45% Revenue Growth', '$25K Monthly Revenue', '150+ Users', '770+ Products', '92 REST Endpoints', '90% Fewer Manual Checks', '85+ Tests'],
+        metrics: ['45% Revenue Growth', '$25K Monthly Revenue', '150+ Users', '770+ Products', '92 REST Endpoints', '90% Fewer Manual Checks'],
         achievements: [
-            'Increased monthly revenue by 45% to $25k by shipping a full-stack e-commerce platform with 150+ users and 770+ products using React, TypeScript, and FastAPI with SQLAlchemy ORM',
-            'Deployed production REST API backend (92 endpoints) using Python/FastAPI with JWT authentication, refresh token rotation, RBAC, rate limiting, and structured audit logging across all requests',
-            'Built semantic search feature using Python and PostgreSQL pgvector embeddings, enabling natural language product queries with sub-200ms response times against a 770+ product catalog',
-            'Reduced internal manual inventory checks by 90% by building a real-time POS sync tool connected to a third-party API using async REST and batch processing 100+ products per batch',
-            'Implemented CI/CD pipeline via Docker containerization enabling consistent, repeatable deployments; wrote 85+ unit and integration tests using pytest across auth, order, and inventory service layers',
+            "Increased monthly revenue by 45% to $25k by shipping a full-stack e-commerce platform from scratch with 150+ users, 770+ products using React, TypeScript, and FastAPI",
+            "Secured and scaled backend traffic by designing 92 REST API endpoints using FastAPI with JWT authentication, role-based access control, and rate limiting with audit logging for all requests",
+            "Built an AI-powered search feature that understands natural language queries using Python, combining vector similarity search and full-text search in PostgreSQL to return relevant results in under 200ms across 770+ product catalog",
+            "Reduced internal manual inventory checks by 90% by building a real-time POS sync tool connecting to third party API using async REST and batch processing 100+ products per batch, eliminating stock-outs across the full catalog",
+            "Implemented CI/CD pipeline via Docker containerization enabling consistent, repeatable deployments; wrote 85+ unit and integration tests using pytest ensuring reliability across auth, order, and inventory service layers"
         ],
-        skills: ['React', 'TypeScript', 'FastAPI', 'Python', 'SQLAlchemy ORM', 'PostgreSQL', 'pgvector', 'Pytest', 'Docker', 'JWT', 'RBAC']
+        skills: ['React', 'TypeScript', 'FastAPI', 'Python', 'PostgreSQL', 'Pytest', 'Docker', 'REST APIs']
     },
 
     {
         id: 2,
-        title: 'Lead Developer (Capstone)',
-        company: 'QuizMaster - Quiz & Flashcard Platform',
+        title: 'Research Assistant',
+        company: 'Lewis University',
         location: 'Romeoville, IL',
-        dates: 'Aug 2025 - Dec 2025',
-        tags: ['Technical Leadership', 'Performance Engineering', 'Full-Stack Development'],
-        metrics: ['Team of 6 Engineers', '5K+ Question Bank', '<10ms Study Session Latency', '80% Fewer DB Reads'],
+        dates: 'Present',
+        tags: ['Full-Stack Development', 'AI Search', 'Data Platform'],
+        metrics: ['40% Search Accuracy Improvement', '50GB Dataset Handling', '3-5s AI Pipeline', 'Real-Time Processing'],
         achievements: [
-            'Led a team of 6 engineers to ship a full-stack quiz and flashcard platform in React and Node.js with a 5K+ question bank, custom quiz creation, user authentication, and spaced-repetition study',
-            'Eliminated Node.js study session latency bottleneck, reducing per-request response times from 5-7s to under 10ms and improving reliability for concurrent users',
-            'Cut dashboard load times from 30s+ to under 5s by fixing N+1 query patterns and adding a caching layer, reducing database reads by 80%',
-            'Refactored 1,400+ lines of React code into reusable UI components and removed unused GCP infrastructure and dependencies, restoring broken CI/CD pipelines and accelerating development velocity',
+            'Built a dataset management platform for Lewis Research Lab using React and Go to centralize, document, and search across all lab datasets',
+            'Implemented an AI-powered search engine in Go combining PostgreSQL full-text search and semantic vector search, improving search accuracy by 40% across all lab datasets',
+            'Designed chunked concurrent dataset uploads and constant-memory streaming downloads in Go, handling dataset files up to 50GB without timeouts or server memory pressure',
+            'Engineered an upload-time AI pipeline that automatically generates labels, class distributions, and summaries for every dataset within 3-5 seconds using a bounded file profiler to validate and clean LLM output before storing metadata',
         ],
-        skills: ['React', 'JavaScript', 'Node.js', 'Firebase Auth', 'Google Cloud Platform', 'CI/CD', 'Performance Optimization', 'Caching']
+        skills: ['React', 'Go', 'PostgreSQL', 'LLMs', 'REST APIs', 'Data Management']
     },
 
     {

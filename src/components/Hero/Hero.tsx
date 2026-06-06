@@ -22,7 +22,7 @@ export default function Hero() {
     return (
         <section className="min-h-screen bg-primary flex flex-col justify-center pt-40 pb-8 max-w-8xl mx-auto sm:px-16">
             
-            <div className="px-10 md:px-20 lg:px-24 max-w-[1400px]">
+            <div className="px-10 md:px-20 lg:px-24 max-w-350">
                 <div className="hero-initial-animation">
                     <h2 className="text-accent font-mono leading-relaxed text-xl">Hi, my name is</h2>
 
@@ -50,7 +50,7 @@ export default function Hero() {
                                 </a>
                             </span>
                             {' '}
-                            (Fall 2026), currently completing my B.S. in Computer Science at{' '}
+                            (Fall 2026). I graduated with a B.S. in Computer Science at{' '}
                             <span className="text-accent font-medium"> 
                                 <a href="https://www.lewisu.edu/" 
                                 target="_blank"

@@ -27,8 +27,8 @@ export default function AboutMe() {
     }, []);
 
     const summaryParagraphs = [
-        "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I'm finishing my B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (5x).",
-        "I build full-stack and backend systems focused on measurable outcomes, and my core coursework includes Machine Learning, Artificial Intelligence, Big Data Systems, Natural Language Processing, and Computer Organization in C/C++.",
+        "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I graduated with a B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (6x).",
+        "I build full-stack and backend systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), dataset management and AI search infrastructure, real-time event processing (2.4M+ events), and semantic caching with multi-provider LLM orchestration.",
     ];
 
     const impactMetrics = [
@@ -36,6 +36,7 @@ export default function AboutMe() {
         '92 REST Endpoints',
         '<10ms Session Latency',
         '2.4M+ Events Processed',
+        '50GB Dataset Streaming',
     ];
 
     const highlights = [
@@ -45,9 +46,9 @@ export default function AboutMe() {
             content: "Increased monthly revenue by 45% to $25k by shipping a full-stack platform serving 150+ users and 770+ products. Built a production Python/FastAPI backend with 92 REST endpoints using SQLAlchemy ORM, JWT + refresh token rotation, RBAC, rate limiting, and structured audit logging. Added pgvector semantic search with sub-200ms responses and a real-time POS sync tool that reduced internal manual inventory checks by 90%.",
         },
         {
-            id: 'quizmaster',
-            title: 'QuizMaster',
-            content: "Led a team of 6 engineers to ship a full-stack React and Node.js quiz and flashcard product with a 5K+ question bank. Removed a key Node.js bottleneck to bring study session request latency from 5-7s to under 10ms. Also cut dashboard load times from 30s+ to under 5s, reduced database reads by 80%, and refactored 1,400+ lines into reusable components while restoring CI/CD.",
+            id: 'lewis-research',
+            title: 'Lewis Research Lab',
+            content: "Built a dataset management platform for Lewis Research Lab using React and Go to centralize, document, and search across all lab datasets. Implemented an AI-powered search engine combining PostgreSQL full-text and semantic vector search, improving accuracy by 40%. Engineered chunked concurrent uploads and constant-memory streaming downloads in Go, handling 50GB files without timeouts, plus an AI pipeline generating metadata in 3-5 seconds.",
         },
         {
             id: 'current-focus',
