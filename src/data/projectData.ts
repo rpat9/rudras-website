@@ -2,19 +2,19 @@ export const projects = [
     {
         id: 1,
         title: "Hometown Liquor",
-        category: "E-Commerce Platform Engineering",
+        category: "E-Commerce Platform",
         dates: "May 2025 - May 2026",
         status: "Completed",
         type: "Professional",
         color: "teal",
         description: "A production e-commerce platform built with React, TypeScript, and FastAPI that drove measurable revenue growth, introduced semantic product search, and automated inventory sync through third-party POS integration.",
-        technologies: ["React", "TypeScript", "FastAPI", "Python", "PostgreSQL", "Pytest", "Docker", "JWT"],
+        technologies: ['React', 'TypeScript', 'Java 21', 'Spring Boot', 'PostgreSQL', 'JUnit', 'Docker', 'REST APIs'],
         achievements: [
-            "Increased monthly revenue by 45% to $25k by shipping a full-stack e-commerce platform from scratch with 150+ users, 770+ products using React, TypeScript, and FastAPI",
-            "Secured and scaled backend traffic by designing 92 REST API endpoints using FastAPI with JWT authentication, role-based access control, and rate limiting with audit logging for all requests",
-            "Built an AI-powered search feature that understands natural language queries using Python, combining vector similarity search and full-text search in PostgreSQL to return relevant results in under 200ms across 770+ product catalog",
-            "Reduced internal manual inventory checks by 90% by building a real-time POS sync tool connecting to third party API using async REST and batch processing 100+ products per batch, eliminating stock-outs across the full catalog",
-            "Implemented CI/CD pipeline via Docker containerization enabling consistent, repeatable deployments; wrote 85+ unit and integration tests using pytest ensuring reliability across auth, order, and inventory service layers"
+            "Increased monthly revenue by 45% to $25k by building an e-commerce platform from scratch with 150+ users and 770+ products using React, Java Spring Boot, and PostgreSQL",
+            "Secured REST API traffic for 92+ endpoints with Spring Security by implementing stateless JWT auth, role-based admin access, request rate limiting, and audit logging across all REST API endpoints",
+            "Built a hybrid AI product search feature using PostgreSQL full-text search and AI-generated embeddings for vector similarity search, returning natural language results in under 1s on average across 770+ products",
+            " Reduced manual inventory checks by 90% by automating POS inventory sync with a third-party API, batch processing catalog updates, updating stock quantities, and logging inventory changes",
+            "Improved deployment reliability with Docker containerization and CI/CD, and wrote 85+ unit and integration tests covering auth, product, inventory, and API service behavior"
         ],
         metrics: ["45% Revenue Growth", "$25K Monthly Revenue", "150+ Users", "770+ Products", "92 REST Endpoints", "90% Fewer Manual Checks", "85+ Tests"],
         links: {

@@ -43,7 +43,7 @@ export default function AboutMe() {
         {
             id: 'hometown-liquor',
             title: 'Hometown Liquor',
-            content: "Increased monthly revenue by 45% to $25k by shipping a full-stack platform serving 150+ users and 770+ products. Built a production Python/FastAPI backend with 92 REST endpoints using SQLAlchemy ORM, JWT + refresh token rotation, RBAC, rate limiting, and structured audit logging. Added pgvector semantic search with sub-200ms responses and a real-time POS sync tool that reduced internal manual inventory checks by 90%.",
+            content: "Increased monthly revenue by 45% to $25k by shipping an e-commerce platform from scratch serving 150+ users and 770+ products. Built a secure production Java Spring Boot backend with 92 REST endpoints with JWT + refresh token rotation, role-based access control, request rate limiting, and audit logging for all REST endpoints. I also built an AI-powered product search feature that understands natural language queries, returning results in <1s and a real-time POS sync tool that reduced internal manual inventory checks by 90%.",
         },
         {
             id: 'lewis-research',
