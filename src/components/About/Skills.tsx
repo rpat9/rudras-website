@@ -1,11 +1,11 @@
 export default function Skills() {
-    const languages = ["Python", "Java", "TypeScript", "JavaScript", "Go", "C++", "C", "SQL", "HTML", "CSS"];
+    const languages = ["Python", "Java", "TypeScript", "JavaScript", "Go", "HTML", "CSS"];
 
-    const frameworks = ["React", "Spring Boot", "Node.js", "Docker", "GitHub Actions", "JUnit", "Jest", "Firebase Auth"];
+    const frameworks = ["Spring Boot", "React", "Express.js", "Node.js", "REST API", "Docker", "GitHub Actions", "Linux", "Bash Scripting"];
 
-    const databases = ["PostgreSQL", "Redis", "Firebase", "MySQL", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP"];
+    const databases = ["PostgreSQL", "Redis", "ElasticSearch", "MySQL", "Firebase", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP"];
 
-    const mlData = ["Apache Spark", "Apache Hadoop", "Apache Arrow", "Apache Hive", "Distributed Systems", "Natural Language Processing", "LLMs", "Ollama", "OpenAI", "Anthropic"];
+    const practicesBigData = ["AI-Assisted Development", "REST APIs", "Agile", "Microservices", "Apache Spark", "Hadoop", "Kafka", "Hive"];
 
     return (
         <>
@@ -63,15 +63,15 @@ export default function Skills() {
 
                 <div>
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Big Data & ML
+                        Practices & Big Data
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                        {mlData.map((mld) => (
+                        {practicesBigData.map((practice) => (
                             <span
-                                key={mld}
+                                key={practice}
                                 className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
                             >
-                                {mld}
+                                {practice}
                             </span>
                         ))}
                     </div>

@@ -28,32 +28,32 @@ export default function AboutMe() {
 
     const summaryParagraphs = [
         "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I graduated with a B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (6x).",
-        "I build full-stack and backend systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), dataset management and AI search infrastructure, real-time event processing (2.4M+ events), and semantic caching with multi-provider LLM orchestration.",
+        "I build full-stack and backend systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), dataset management and AI search infrastructure, real-time event processing (2.4M+ events), and cost-aware LLM gateway infrastructure.",
     ];
 
     const impactMetrics = [
         '45% Revenue Growth',
-        '92 REST Endpoints',
-        '<10ms Session Latency',
+        '92+ REST Endpoints',
+        '9,000+ Requests/Sec',
         '2.4M+ Events Processed',
-        '50GB Dataset Streaming',
+        '50 GB Dataset Streaming',
     ];
 
     const highlights = [
         {
             id: 'hometown-liquor',
             title: 'Hometown Liquor',
-            content: "Increased monthly revenue by 45% to $25k by shipping an e-commerce platform from scratch serving 150+ users and 770+ products. Built a secure production Java Spring Boot backend with 92 REST endpoints with JWT + refresh token rotation, role-based access control, request rate limiting, and audit logging for all REST endpoints. I also built an AI-powered product search feature that understands natural language queries, returning results in <1s and a real-time POS sync tool that reduced internal manual inventory checks by 90%.",
+            content: "Increased monthly revenue by 45% to $25k by building an e-commerce platform from scratch with 150+ users and 770+ products using React, Java Spring Boot, and PostgreSQL. Secured 92+ REST API endpoints with stateless JWT auth, role-based admin access, request rate limiting, and audit logging. I also built hybrid AI product search returning natural language results in under 1s on average and automated POS inventory sync to reduce manual inventory checks by 90%.",
         },
         {
             id: 'lewis-research',
             title: 'Lewis Research Lab',
-            content: "Built a dataset management platform for Lewis Research Lab using React and Go to centralize, document, and search across all lab datasets. Implemented an AI-powered search engine combining PostgreSQL full-text and semantic vector search, improving accuracy by 40%. Engineered chunked concurrent uploads and constant-memory streaming downloads in Go, handling 50GB files without timeouts, plus an AI pipeline generating metadata in 3-5 seconds.",
+            content: "Built a dataset management platform for Lewis Research Lab using React and Go to centralize, document, and search across all lab datasets. Implemented an AI-powered search engine combining PostgreSQL full-text and semantic vector search, improving accuracy by 40%. Engineered chunked concurrent uploads and constant-memory streaming downloads in Go, handling 50 GB files without timeouts, plus an upload-time AI pipeline generating labels, class distributions, and summaries in 3-5 seconds.",
         },
         {
             id: 'current-focus',
             title: 'Current Focus',
-            content: "Building a Distributed LLM Inference Gateway in Go with an OpenAI-compatible REST API, middleware-based tracing, unique request IDs, and structured latency logging. Also engineering a two-tier semantic cache (Redis exact-match + pgvector cosine similarity) with cost-aware multi-provider routing, circuit breaking, and automatic failover targeting sub-10ms p95 cached responses.",
+            content: "Building an open-source, cost-aware Distributed LLM Inference Gateway in Go that standardizes OpenAI, Anthropic, and local Ollama models behind a unified REST API with per-request tracing and structured logging. Implemented an exact-match Redis cache load tested to handle 9,000+ requests/s, reducing p99 response latency from 2.1s to 15ms, and building an async PostgreSQL pipeline to track AI usage, latency, and costs.",
         },
     ];
 
