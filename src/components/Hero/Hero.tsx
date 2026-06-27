@@ -6,10 +6,10 @@ import { HiArrowRight } from "react-icons/hi2";
 export default function Hero() {
 
     const myWorks: string[] = [
-        "develop impactful software.",
-        "build AI & ML systems.",
+        "build full-stack platforms.",
         "engineer resilient backends.",
-        "ship real products.",
+        "ship AI-assisted systems.",
+        "turn data into useful products.",
     ];
 
     const scrollToSection = (sectionId: string) => {
@@ -64,7 +64,7 @@ export default function Hero() {
                             </span>
                             {' '}and a{' '}
                             <span className="text-accent font-medium">3.9 GPA</span>
-                            . I build full-stack applications and scalable backend systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
+                            . I build full-stack applications, data platforms, and scalable backend systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
                         </p>
 
                     </div>

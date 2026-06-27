@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { projects } from "../../data/projectData";
 import { CiCalendar, CiShoppingTag } from "react-icons/ci";
+import { FaStar } from "react-icons/fa6";
 
 export default function Projects() {
     
@@ -81,7 +82,9 @@ export default function Projects() {
                                     <span className={`w-3 h-3 rounded-full mt-1 project-dot-${project.color}`}></span>
                                     <h3 className={`text-lg font-semibold project-color-${project.color}`}>
                                         {project.title}
-                                        {project.featured && <span className="ml-2">⭐</span>}
+                                        {project.featured && (
+                                            <FaStar className="inline ml-2 align-[-1px]" size={14} aria-label="Featured project" />
+                                        )}
                                     </h3>
                                 </div>
                                 
@@ -107,7 +110,9 @@ export default function Projects() {
                             <span className={`w-4 h-4 rounded-full mt-1 project-dot-${displayProject.color}`}></span>
                             <h3 className={`text-3xl font-semibold project-color-${displayProject.color}`}>
                                 {displayProject.title}
-                                {displayProject.featured && <span className="ml-2">⭐</span>}
+                                {displayProject.featured && (
+                                    <FaStar className="inline ml-2 align-[-2px]" size={22} aria-label="Featured project" />
+                                )}
                             </h3>
                         </div>
 
@@ -168,7 +173,7 @@ export default function Projects() {
                                         transition: `opacity 0.4s ease-out ${index * 0.1}s, transform 0.4s ease-out ${index * 0.1}s`
                                     }}
                                 >
-                                    <span className={`project-color-${displayProject.color} mt-1`}>▷</span>
+                                    <span className={`project-color-${displayProject.color} mt-1`}>{">"}</span>
                                     <span className="text-secondary text-sm">{achievement}</span>
                                 </div>
                             ))}
@@ -220,7 +225,9 @@ export default function Projects() {
                                 <span className={`w-2.5 h-2.5 md:w-4 md:h-4 rounded-full mt-1 project-dot-${project.color}`}></span>
                                 <h3 className={`text-xl md:text-3xl font-semibold project-color-${project.color}`}>
                                     {project.title}
-                                    {project.featured && <span className="ml-2">⭐</span>}
+                                    {project.featured && (
+                                        <FaStar className="inline ml-2 align-[-2px]" size={18} aria-label="Featured project" />
+                                    )}
                                 </h3>
                             </div>
 
@@ -273,7 +280,7 @@ export default function Projects() {
                             <div className="flex flex-col gap-2">
                                 {project.achievements.map((achievement, index) => (
                                     <div key={index} className="flex gap-2">
-                                        <span className={`project-color-${project.color}`}>▷</span>
+                                        <span className={`project-color-${project.color}`}>{">"}</span>
                                         <span className="text-secondary text-sm">{achievement}</span>
                                     </div>
                                 ))}

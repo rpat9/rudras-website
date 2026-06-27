@@ -122,7 +122,7 @@ export default function ProfessionalExperience() {
                                     key={`${experience.id}-achievement-${index}`}
                                     className="flex gap-2"
                                 >
-                                    <span className="text-accent">▷</span>
+                                    <span className="text-accent">{">"}</span>
                                     <span className="text-secondary text-md">{achievement}</span>
                                 </div>
                             ))}
@@ -210,7 +210,7 @@ export default function ProfessionalExperience() {
                                     key={`${experience.id}-achievement-${index}`}
                                     className="flex gap-2"
                                 >
-                                    <span className="text-accent">▷</span>
+                                    <span className="text-accent">{">"}</span>
                                     <span className="text-secondary text-md">{achievement}</span>
                                 </div>
                             ))}

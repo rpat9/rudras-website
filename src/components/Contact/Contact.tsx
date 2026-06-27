@@ -61,7 +61,7 @@ export default function Contact() {
                 }}
             >
                 <p className="text-secondary text-center px-12 mb-10">
-                    I am currently looking for new opportunities and am always available via email. I'm always excited to hear from fellow developers, recruiters, and potential collaborators.
+                    I am currently looking for software engineering opportunities for 2026 and am always available via email. I'm always excited to hear from fellow developers, recruiters, and potential collaborators.
                 </p>
 
                 <div className="grid grid-cols-2 gap-6 px-12">
@@ -128,7 +128,7 @@ export default function Contact() {
             {/* Mobile Layout */}
             <div className="lg:hidden flex flex-col gap-6 px-4 md:ml-15">
                 <p className="text-secondary mb-4">
-                    I am currently looking for new opportunities and am always available via email. I'm always excited to hear from fellow developers, recruiters, and potential collaborators.
+                    I am currently looking for software engineering opportunities for 2026 and am always available via email. I'm always excited to hear from fellow developers, recruiters, and potential collaborators.
                 </p>
 
                 <a 
@@ -192,7 +192,7 @@ export default function Contact() {
 
             <div className="text-center mt-12 pb-1">
                 <p className="text-secondary text-sm">
-                    © 2026 Rudra Patel. All rights reserved.
+                    Copyright 2026 Rudra Patel. All rights reserved.
                 </p>
             </div>
 

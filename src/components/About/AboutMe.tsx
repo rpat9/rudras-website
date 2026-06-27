@@ -28,32 +28,32 @@ export default function AboutMe() {
 
     const summaryParagraphs = [
         "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I graduated with a B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (6x).",
-        "I build full-stack and backend systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), dataset management and AI search infrastructure, real-time event processing (2.4M+ events), and cost-aware LLM gateway infrastructure.",
+        "I build full-stack, backend, and data systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), research dataset management, AI-assisted search, local CI tooling, real-time event processing, and production cloud services.",
     ];
 
     const impactMetrics = [
-        '45% Revenue Growth',
+        '$25K Monthly Revenue',
         '92+ REST Endpoints',
-        '9,000+ Requests/Sec',
+        '47.4% Faster CI Benchmarks',
         '2.4M+ Events Processed',
-        '50 GB Dataset Streaming',
+        '50GB Dataset Streaming',
     ];
 
     const highlights = [
         {
             id: 'hometown-liquor',
             title: 'Hometown Liquor',
-            content: "Increased monthly revenue by 45% to $25k by building an e-commerce platform from scratch with 150+ users and 770+ products using React, Java Spring Boot, and PostgreSQL. Secured 92+ REST API endpoints with stateless JWT auth, role-based admin access, request rate limiting, and audit logging. I also built hybrid AI product search returning natural language results in under 1s on average and automated POS inventory sync to reduce manual inventory checks by 90%.",
+            content: "Built an e-commerce platform from scratch with React, Java Spring Boot, and PostgreSQL, supporting 150+ users and 770+ products while helping grow monthly revenue to $25K. Secured 92+ REST API endpoints with stateless authentication, role-based admin access, rate limiting, and logging. I also implemented AI-assisted product search with sub-second average response times and automated daily inventory sync with a third-party POS vendor API.",
         },
         {
             id: 'lewis-research',
             title: 'Lewis Research Lab',
-            content: "Built a dataset management platform for Lewis Research Lab using React and Go to centralize, document, and search across all lab datasets. Implemented an AI-powered search engine combining PostgreSQL full-text and semantic vector search, improving accuracy by 40%. Engineered chunked concurrent uploads and constant-memory streaming downloads in Go, handling 50 GB files without timeouts, plus an upload-time AI pipeline generating labels, class distributions, and summaries in 3-5 seconds.",
+            content: "Built a full-stack dataset management platform for Lewis Research Lab with React, Go, and PostgreSQL to centralize scattered research datasets into one place for uploading, documenting, searching, editing, and downloading research data. Developed AI-assisted search against a lab-hosted internal model, implemented concurrent chunked uploads and streaming downloads for files up to 50GB, and designed an AI metadata pipeline for labels, class distributions, summaries, and reusable search queries.",
         },
         {
             id: 'current-focus',
-            title: 'Current Focus',
-            content: "Building an open-source, cost-aware Distributed LLM Inference Gateway in Go that standardizes OpenAI, Anthropic, and local Ollama models behind a unified REST API with per-request tracing and structured logging. Implemented an exact-match Redis cache load tested to handle 9,000+ requests/s, reducing p99 response latency from 2.1s to 15ms, and building an async PostgreSQL pipeline to track AI usage, latency, and costs.",
+            title: 'LocalCI',
+            content: "Shipped an open-source CI runner in Go that reproduces GitHub Actions-style workflows locally. LocalCI validates YAML pipelines, runs dependency-aware jobs from the terminal across Windows, macOS, and Linux, executes independent jobs in parallel while respecting dependencies, cuts benchmark runtime by 47.4%, and saves logs, artifacts, HTML reports, failed-only reruns, and failure grouping to make debugging easier.",
         },
     ];
 

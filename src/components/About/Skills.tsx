@@ -1,11 +1,11 @@
 export default function Skills() {
-    const languages = ["Python", "Java", "TypeScript", "JavaScript", "Go", "HTML", "CSS"];
+    const languages = ["Python", "Java", "TypeScript", "Go", "C", "C++", "JavaScript"];
 
-    const frameworks = ["Spring Boot", "React", "Express.js", "Node.js", "REST API", "Docker", "GitHub Actions", "Linux", "Bash Scripting"];
+    const frameworks = ["Spring Boot", "React", "Express.js", "Node.js", "Docker", "GitHub Actions", "REST APIs", "Agile"];
 
-    const databases = ["PostgreSQL", "Redis", "ElasticSearch", "MySQL", "Firebase", "AWS (ECS, RDS, S3, CloudWatch, IAM)", "GCP"];
+    const databases = ["PostgreSQL", "Redis", "MySQL", "Firebase", "AWS ECS", "AWS RDS", "AWS S3", "AWS CloudWatch", "AWS IAM", "GCP"];
 
-    const practicesBigData = ["AI-Assisted Development", "REST APIs", "Agile", "Microservices", "Apache Spark", "Hadoop", "Kafka", "Hive"];
+    const practicesBigData = ["AI-Assisted Search", "Large-File Streaming", "CI/CD", "Apache Spark", "Apache Hadoop", "Apache Kafka", "Apache Hive"];
 
     return (
         <>
