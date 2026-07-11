@@ -27,8 +27,9 @@ export default function AboutMe() {
     }, []);
 
     const summaryParagraphs = [
-        "I'm an incoming Master of Computer Science student at the University of Illinois Urbana-Champaign (Fall 2026) in AI & Machine Learning for Enterprise Applications. I graduated with a B.S. in Computer Science (AI concentration) at Lewis University with a 3.9 GPA and Dean's List honors (6x).",
-        "I build full-stack, backend, and data systems focused on measurable outcomes. My work spans e-commerce platforms ($25K monthly revenue), research dataset management, AI-assisted search, local CI tooling, real-time event processing, and production cloud services.",
+        "I’m a builder at heart. I like taking ambiguous problems, breaking them down, and turning them into software that people can actually use. My work is in full-stack engineering, data systems, and applied AI. I’ve built everything from an e-commerce platform that now supports real monthly revenue to research infrastructure for managing security science datasets.",
+        "Those projects taught me that good software is not just about clean code but also about understanding the workflow, designing for the people using it, and measuring whether the system actually improves something.",
+        "As I begin my MCS at UIUC, I’m focused on deepening my work in AI and machine learning for enterprise applications. I’m especially interested in systems where intelligence has to be practical: reliable, explainable, and connected to real business or research outcomes.",
     ];
 
     const impactMetrics = [
@@ -60,7 +61,7 @@ export default function AboutMe() {
     return (
         <section
             ref={ref}
-            id="about" 
+            id="about"
             className="px-3 lg:px-6 py-24 bg-sections"
             style={{
                 opacity: isVisible ? 1 : 0,

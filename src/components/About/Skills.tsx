@@ -1,11 +1,11 @@
 export default function Skills() {
-    const languages = ["Python", "Java", "TypeScript", "Go", "C", "C++", "JavaScript"];
+    const languages = ["Python", "Java", "TypeScript", "Go", "C", "C++"];
 
-    const frameworks = ["Spring Boot", "React", "Express.js", "Node.js", "Docker", "GitHub Actions", "REST APIs", "Agile"];
+    const frameworks = ["React", "Spring Boot", "Node.js", "Express.js", "REST APIs"];
 
-    const databases = ["PostgreSQL", "Redis", "MySQL", "Firebase", "AWS ECS", "AWS RDS", "AWS S3", "AWS CloudWatch", "AWS IAM", "GCP"];
+    const dataMl = ["PostgreSQL", "Redis", "MySQL", "Firebase", "Pandas", "Scikit-learn", "Apache Spark", "Apache Hadoop", "Apache Kafka", "Apache Hive"];
 
-    const practicesBigData = ["AI-Assisted Search", "Large-File Streaming", "CI/CD", "Apache Spark", "Apache Hadoop", "Apache Kafka", "Apache Hive"];
+    const cloudTools = ["AWS", "GCP", "Docker", "Terraform", "GitHub Actions", "CI/CD"];
 
     return (
         <>
@@ -31,7 +31,7 @@ export default function Skills() {
 
                 <div className="mb-8">
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Frameworks & Tools
+                        Frameworks
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {frameworks.map((framework) => (
@@ -47,10 +47,10 @@ export default function Skills() {
 
                 <div className="mb-8">
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Database & Cloud
+                        Data & ML
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                        {databases.map((database) => (
+                        {dataMl.map((database) => (
                             <span
                                 key={database}
                                 className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
@@ -63,10 +63,10 @@ export default function Skills() {
 
                 <div>
                     <h3 className="text-primary font-semibold text-2xl mb-3">
-                        Practices & Big Data
+                        Cloud & Tools
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                        {practicesBigData.map((practice) => (
+                        {cloudTools.map((practice) => (
                             <span
                                 key={practice}
                                 className="px-3 py-1 text-sm bg-cyan-500/10 text-cyan-500  rounded-full border border-cyan-500/20"
@@ -76,7 +76,7 @@ export default function Skills() {
                         ))}
                     </div>
                 </div>
-                        
+
             </div>
         </>
     )

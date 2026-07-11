@@ -21,7 +21,7 @@ export default function Hero() {
 
     return (
         <section className="min-h-screen bg-primary flex flex-col justify-center pt-40 pb-8 max-w-8xl mx-auto sm:px-16">
-            
+
             <div className="px-10 md:px-20 lg:px-24 max-w-350">
                 <div className="hero-initial-animation">
                     <h2 className="text-accent font-mono leading-relaxed text-xl">Hi, my name is</h2>
@@ -31,7 +31,7 @@ export default function Hero() {
                     <div>
                         <h1 className="text-secondary text-3xl md:text-5xl lg:text-6xl pt-3 font-semibold">
                             <span>I </span>
-                            <TypeWriter 
+                            <TypeWriter
                                 phrases={myWorks}
                             />
                         </h1>
@@ -51,36 +51,36 @@ export default function Hero() {
                             </span>
                             {' '}
                             (Fall 2026). I graduated with a B.S. in Computer Science at{' '}
-                            <span className="text-accent font-medium"> 
-                                <a href="https://www.lewisu.edu/" 
+                            <span className="text-accent font-medium">
+                                <a href="https://www.lewisu.edu/"
                                 target="_blank"
                                 className="hover:underline"
                                 >Lewis University</a>
                             </span>
                             {' '}
                             with a concentration in{' '}
-                            <span className="text-accent font-medium"> 
+                            <span className="text-accent font-medium">
                                 artificial intelligence
                             </span>
                             {' '}and a{' '}
                             <span className="text-accent font-medium">3.9 GPA</span>
-                            . I build full-stack applications, data platforms, and scalable backend systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
+                            . I build full-stack applications, data platforms, and scalable systems that solve real problems, and I'm seeking software engineering opportunities for 2026.
                         </p>
 
                     </div>
 
                     <div className="pt-12 flex flex-col md:flex-row gap-5">
-                        <button 
+                        <button
                             className="btn-primary flex"
                             onClick={() => scrollToSection('experience')}
                         >
                             <span>
-                                View My Work 
+                                View My Work
                             </span>
                             <HiArrowRight size={18} />
                         </button>
 
-                        <button 
+                        <button
                             className="btn-outline flex"
                             onClick={() => scrollToSection('contact')}
                         >
@@ -91,7 +91,7 @@ export default function Hero() {
                         </button>
                     </div>
                 </div>
-                
+
 
                 <Sidebar />
 
@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="grow"></div>
 
             <ScrollIndicator />
-            
+
         </section>
     )
 }

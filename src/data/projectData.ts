@@ -51,9 +51,9 @@ export const projects: Project[] = [
         description: "A Java Spring Boot AI recipe backend secured with stateless JWT authentication, resilient generation workflows, AWS infrastructure, and extensive backend test coverage.",
         technologies: ["TypeScript", "Java", "Spring Boot", "AWS", "PostgreSQL", "Docker", "Terraform"],
         achievements: [
-            "Built a Java Spring Boot backend with 12 REST API endpoints spanning recipe generation, history, and admin operations, secured with stateless JWT auth, BCrypt password hashing, and per-user access control",
-            "Added fault-tolerant generation workflows with rate limiting, retry logic, and circuit breaking, then validated reliability with 139 backend unit and integration tests across auth, validation, and Amazon S3 exports",
-            "Defined secure AWS infrastructure in Terraform with ECS Fargate, RDS PostgreSQL, IAM, and CloudWatch to isolate compute, protect data, and monitor service health",
+            "Built a Java (Spring Boot) backend with 12 REST API endpoints with a LLM integration layer supporting OpenAI, Anthropic, and local models to generate structured recipes with token usage and latency tracked on every request",
+            "Added caching layer to avoid redundant LLM API calls, plus rate limiting and retry handling to keep the service reliable under failure, backed by 139 unit and integration tests",
+            "Defined secure AWS infrastructure in Terraform with ECS Fargate, RDS PostgreSQL, IAM, S3, and CloudWatch to isolate compute, protect data, and monitor service health",
         ],
         metrics: ["12 REST Endpoints", "139 Backend Tests", "AWS ECS Fargate", "Terraform IaC"],
         links: {
@@ -73,9 +73,9 @@ export const projects: Project[] = [
         description: "A distributed event pipeline using Node.js, Express.js, TypeScript, Redis Streams, and TimescaleDB for reliable ingestion, low-latency dashboard queries, and cached REST API reads.",
         technologies: ["Node.js", "Express.js", "TypeScript", "Redis", "TimescaleDB", "Docker"],
         achievements: [
-            "Built a real-time analytics pipeline with Redis Streams, Node.js, TimescaleDB, and React that ingested, processed, stored, and visualized 2.4M+ events in 24 hours with zero observed message loss",
-            "Engineered a Redis Stream batch consumer that grouped up to 100 events per transactional write, reducing database transactions by 60-70% while preventing partial data storage during crashes",
-            "Replaced live dashboard scans over millions of event rows with precomputed TimescaleDB aggregates, reducing analytics query latency by 55x from 1.8s to 33ms",
+            "Built a real time analytics pipeline using TypeScript (Node.js), and Redis that ingested, processed, stored, and visualized 2.4M+ events over 24 hours with zero data loss, containerized with Docker for consistent deployments",
+            "Designed a batch consumer on Redis Streams that grouped up to 100 events per database write, cutting database transactions by 60–70% and ensuring no data was lost even if the service crashed mid batch",
+            "Built a REST API with Express.js to query and visualize millions of event rows, cutting dashboard latency 55x from 1.8s to 33ms by pre-calculating results instead of scanning raw data on every request",
         ],
         metrics: ["2.4M+ Events", "Zero Observed Message Loss", "55x Faster Queries", "60-70% Fewer DB Transactions"],
         links: {
@@ -139,8 +139,8 @@ export const projects: Project[] = [
         description: "A C++ CSV query engine with immutable copy-on-write DataFrame internals and SQL-like operations for efficient filtering and sorting on typed CSV data.",
         technologies: ["C++", "STL", "CMake"],
         achievements: [
-            "Built a C++ CSV query engine with immutable, copy-on-write DataFrame design, enabling efficient SQL-like filtering and sorting without duplicating memory",
-            "Developed an RFC 4180-compliant parser and type inference engine, enabling accurate typed queries over raw CSV data",
+            "Built a C++17 command-line CSV query engine with a six-class architecture, enabling schema inspection, SQL-like filtering, sorting, and numeric aggregates without a database engine or external libraries",
+            "Implemented immutable DataFrame operations, INT/DOUBLE/STRING type inference, and a character-by-character RFC 4180 parser handling quoted commas, escaped quotes, empty cells, and CRLF line endings",
         ],
         metrics: ["Copy-on-Write DataFrame", "RFC 4180 Parser", "Typed Query Engine"],
         links: {
